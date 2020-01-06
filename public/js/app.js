@@ -26933,36 +26933,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 // jQuery
- // ページ全体の高さがウィンドウサイズより小さかったら、フッターを画面下に固定する関数を定義
-
-function judgeBodyHeight() {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').height() < jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).height()) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-footer_fixed').css({
-      "position": "fixed",
-      "left": 0,
-      "right": 0,
-      "bottom": 0
-    });
-  } else {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-footer_fixed').css('position', 'static');
-  }
-} // DOMが生成されたらjudgeBodyHeightを実行
-
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-  judgeBodyHeight();
-}); // DOMが変更されたらjudgeBodyHeightを実行
-// const target = document.getElementById('app');
-// const observer = new MutationObserver(records => {
-//   judgeBodyHeight()
-// })
-// observer.observe(target, {
-//   childList: true
-// })
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#app').on('DOMSubtreeModified propertychange', function () {
-  judgeBodyHeight();
-}); // ハンバーガーメニュー
+ // ハンバーガーメニュー
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   var $btn = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js_toggle_btn");
