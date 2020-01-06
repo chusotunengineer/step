@@ -1,0 +1,28 @@
+.c-button {
+  border: 2px solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background: transparent;
+  &:hover {
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.125);
+    text-decoration: none;
+  }
+  &:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+  &--default {
+    border-color: $main;
+    color: $main;
+  }
+  &--transparent {
+    background: transparent;
+    border-color: $white;
+    color: $white;
+  }
+  &--wide {
+    width: 300px;
+  }
+}

@@ -1,0 +1,24 @@
+.c-bread {
+  width: 100%;
+  margin-bottom: 40px;
+  background: $navy;
+  padding: 5px 0;
+  @include mq(xl) {
+    margin: 100px auto 40px auto;
+  }
+  &__content {
+    width: 1100px;
+    margin: auto;
+    @include mq(xl) {
+      width: 100%;
+      padding: 5px 20px;
+    }
+  }
+  &__arrow {
+    color: $white;
+    margin: 0 10px;
+  }
+  &__txt {
+    color: $white;
+  }
+}

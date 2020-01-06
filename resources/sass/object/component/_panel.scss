@@ -1,0 +1,63 @@
+.c-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid $main;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: calc(50% - 10px);
+  height: 500px;
+  &:hover {
+    text-decoration: none;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &__content {
+    min-height: 250px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__imgWrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56%;
+    margin-bottom: 20px;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &__txt {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  &__badge {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    transform: translate(30%, -30%);
+    color: white;
+    line-height: 4.5vw;
+    text-align: center;
+    background: #e98d14;
+    border-radius: 50%;
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+}

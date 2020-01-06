@@ -1,0 +1,12 @@
+.p-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    &--white {
+      color: $white;
+    }
+  }
+}

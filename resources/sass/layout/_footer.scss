@@ -1,0 +1,19 @@
+.l-footer {
+  background: $pure_black;
+  width: 100%;
+  &__content {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin: auto;
+    @include mq(xl) {
+      width: 100%;
+      padding: 50px 20px;
+    }
+  }
+  &__nav {
+    width: 40%;
+  }
+}

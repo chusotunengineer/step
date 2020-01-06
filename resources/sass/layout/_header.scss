@@ -1,0 +1,30 @@
+.l-header {
+  width: 100%;
+  background: white;
+  @include mq(xl) {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &__content {
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: auto;
+    @include mq(xl) {
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+  &__nav {
+    width: 40%;
+    @include mq(xl) {
+      width: auto;
+    }
+  }
+}

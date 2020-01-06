@@ -1,0 +1,44 @@
+.p-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__search {
+    width: 25%;
+    height: auto;
+    border: 2px solid $main;
+    padding: 30px 10px;
+    border-radius: 4px;
+  }
+  &__notFound {
+    width: 70%;
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .c-form__row {
+    flex-direction: column;
+    border-bottom: none;
+    &::after {
+      display: none;
+    }
+    label {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .c-button {
+    width: 90%;
+  }
+  // .c-panel {
+  //   &__imgWrap {
+
+  //   }
+  //   &__content {
+
+  //   }
+  // }
+}

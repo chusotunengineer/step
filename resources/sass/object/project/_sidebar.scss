@@ -1,0 +1,15 @@
+.p-sidebar {
+  position: sticky;
+  top: 10px;
+  padding: 10px;
+  border: 2px solid $main;
+  border-radius: 4px;
+  width: 25%;
+  height: 500px;
+  &__item {
+    line-height: 2.5;
+  }
+  @include mq(xl) {
+    display: none;
+  }
+}

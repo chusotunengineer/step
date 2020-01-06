@@ -1,0 +1,61 @@
+.u-mx_auto {
+  display: block;
+  margin: auto;
+}
+.u-mx_right {
+  display: block;
+  margin: auto 0 auto auto;
+}
+.u-mx_left {
+  display: block;
+  margin: auto auto auto 0;
+}
+
+.u-mb_s {
+  margin-bottom: 40px;
+}
+.u-mb_xs {
+  margin-bottom: 20px;
+}
+.u-mt_s {
+  margin-top: 40px;
+}
+
+.u-pt_0 {
+  padding-top: 0;
+}
+
+.u-none__pc {
+  display: none;
+  @include mq(xl) {
+    display: block;
+  }
+}
+.u-none__mobile {
+  display: block;
+  @include mq(xl) {
+    display: none;
+  }
+}
+
+.u-d_block {
+  display: block;
+}
+.u-d_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.u-font--alert {
+  color: #ff0033;
+  font-size: 14px;
+}
+
+.u-align_center {
+  text-align: center;
+}
+
+.u-weight_bold {
+  font-weight: bold;
+}

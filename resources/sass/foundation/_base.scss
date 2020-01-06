@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  font-family: $noto_sans;
+  color: $black;
+  line-height: 1.8;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+}
+a:hover {
+  text-decoration: underline;
+}

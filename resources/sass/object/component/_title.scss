@@ -1,0 +1,13 @@
+.c-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  &--m {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  &--s {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

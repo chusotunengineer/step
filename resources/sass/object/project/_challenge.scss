@@ -1,0 +1,19 @@
+.p-challenge {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__content {
+    width: 70%;
+  }
+  &__txt {
+    background: $light-gray;
+    min-height: 300px;
+    padding: 20px;
+  }
+  &__sidebar {
+    width: 25%;
+  }
+  &__currentStep {
+    background-color: $light-gray;
+  }
+}

@@ -1,0 +1,73 @@
+.c-hamburger {
+  width: 40px;
+  height: 32px;
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+  &.active {
+    padding-left: 10px;
+    .c-hamburger__line {
+      background: $white;
+      transition: all 0.8s;
+      &:first-child {
+        transform: rotate(45deg) translate(0, 17px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        transform: rotate(-45deg) translate(3px, -20px);
+      }
+    }
+  }
+  &__line {
+    width: 40px;
+    height: 4px;
+    background: $black;
+    position: absolute;
+    transition: all 0.8s;
+    &:nth-child(2) {
+      top: 14px;
+      right: 0;
+      width: 30px;
+      opacity: 1;
+    }
+    &:last-child {
+      bottom: 0;
+    }
+  }
+  &__nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 450px;
+    background: rgba(233, 141, 20, 0.9);
+    margin: 0;
+    padding: 130px 25px 0 25px;
+    transform: translateX(450px);
+    opacity: 0;
+    transition: all 0.8s;
+    @include mq(xl) {
+      display: block;
+    }
+    @include mq(sm) {
+      width: 100%;
+      transform: translateX(100%);
+    }
+    li {
+      padding: 16px 0 16px 14px;
+      border-bottom: 1px solid $white;
+    }
+    a {
+      color: $white;
+    }
+    &.active {
+      transition: all 0.8s;
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

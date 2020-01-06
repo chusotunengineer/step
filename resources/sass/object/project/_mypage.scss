@@ -1,0 +1,8 @@
+.p-mypage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__content {
+    margin-bottom: 40px;
+  }
+}
