@@ -26952,13 +26952,16 @@ function judgeBodyHeight() {
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   judgeBodyHeight();
 }); // DOMが変更されたらjudgeBodyHeightを実行
+// const target = document.getElementById('app');
+// const observer = new MutationObserver(records => {
+//   judgeBodyHeight()
+// })
+// observer.observe(target, {
+//   childList: true
+// })
 
-var target = document.getElementById('app');
-var observer = new MutationObserver(function (records) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#app').on('DOMSubtreeModified propertychange', function () {
   judgeBodyHeight();
-});
-observer.observe(target, {
-  childList: true
 }); // ハンバーガーメニュー
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {

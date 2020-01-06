@@ -21,13 +21,17 @@ $(function () {
 })
 
 // DOMが変更されたらjudgeBodyHeightを実行
-const target = document.getElementById('app');
-const observer = new MutationObserver(records => {
+// const target = document.getElementById('app');
+// const observer = new MutationObserver(records => {
+//   judgeBodyHeight()
+// })
+// observer.observe(target, {
+//   childList: true
+// })
+
+$('#app').on('DOMSubtreeModified propertychange', function () {
   judgeBodyHeight()
-})
-observer.observe(target, {
-  childList: true
-})
+});
 
 // ハンバーガーメニュー
 $(function () {
