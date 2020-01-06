@@ -38,7 +38,7 @@
         </p>
       </div>
     </div>
-    <a href="challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-mx_auto">
+    <a href="/steps/challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-mx_auto">
       チャレンジ！
     </a>
     <a href="https://twitter.com/intent/tweet?button_hashtag=ステップ&ref_src=twsrc%5Etfw&url=http://localhost:8000&text=挑戦を共有するサービス『STEP』で、「{{ $step['name'] }}」に挑戦しよう！" class="twitter-hashtag-button" data-show-count="false">Tweet #ステップ</a>
