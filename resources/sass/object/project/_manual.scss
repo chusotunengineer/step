@@ -1,7 +1,14 @@
 .p-manual {
   display: flex;
   justify-content: space-between;
+  @include mq(sm) {
+    flex-direction: column;
+  }
   .c-card {
     width: 23%;
+    @include mq(sm) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }

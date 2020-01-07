@@ -2,7 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mq() {
+    flex-direction: column;
+  }
+  &__txt {
+    @include mq() {
+      margin-bottom: 40px;
+    }
+  }
   &__img {
     width: 48%;
+    @include mq() {
+      width: 100%;
+    }
   }
 }

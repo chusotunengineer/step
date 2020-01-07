@@ -2,12 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @include mq() {
+    flex-direction: column;
+  }
   &__search {
     width: 25%;
     height: auto;
     border: 2px solid $main;
     padding: 30px 10px;
     border-radius: 4px;
+    @include mq() {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
   &__notFound {
     width: 70%;
@@ -18,6 +25,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
+    @include mq() {
+      width: 100%;
+    }
   }
   .c-form__row {
     flex-direction: column;

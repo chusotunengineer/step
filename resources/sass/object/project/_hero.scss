@@ -21,6 +21,7 @@
     color: $pure_black;
     @include mq(xl) {
       font-size: 6vw;
+      margin-bottom: 3vw;
     }
     &--accent {
       color: $main;
@@ -29,6 +30,9 @@
       color: $white;
       font-size: 25px;
       font-family: $noto_sans;
+      @include mq(xl) {
+        font-size: 4vw;
+      }
     }
   }
   &__img {
@@ -45,5 +49,9 @@
     position: absolute;
     bottom: 10%;
     right: 5%;
+    @include mq() {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
   }
 }

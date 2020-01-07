@@ -17,12 +17,23 @@
       height: 2px;
       background-color: $main;
     }
+    @include mq() {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__label {
     width: 25%;
+    @include mq() {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
   &__inputWrap {
     width: 75%;
+    @include mq() {
+      width: 100%;
+    }
   }
   &__input,
   &__textarea,
@@ -50,5 +61,8 @@
   }
   &__previewImg {
     width: 50%;
+    @include mq() {
+      width: 100%;
+    }
   }
 }
