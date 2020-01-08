@@ -31,7 +31,7 @@ export default {
     // 自分の登録したステップ情報なので、マイページ用のコントローラーを併用する
     request() {
       axios
-        .get("/mypage/my-step")
+        .get("mypage/my-step")
         .then(res => {
           console.log(res.data);
           let result = res.data;
