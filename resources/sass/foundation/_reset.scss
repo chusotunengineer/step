@@ -177,6 +177,12 @@ textarea {
   font-size: $font-s;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 *,
 *::before,
 *::after {
