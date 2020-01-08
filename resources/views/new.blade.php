@@ -65,7 +65,7 @@
           @error('image')
           <span>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </span><br>
           @enderror
         </div>
       </div>

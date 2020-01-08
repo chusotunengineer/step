@@ -57,7 +57,7 @@
           @error('icon')
           <span>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </span><br>
           @enderror
           <span>現在のアイコン *変更しない場合はこのまま保存してください</span><br>
           <img class="c-form__previewImg" src="{{ empty($user['icon']) ? asset('img/no_image.png') : asset($user['icon']) }}" alt="">
