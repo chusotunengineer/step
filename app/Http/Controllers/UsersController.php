@@ -39,14 +39,14 @@ class UsersController extends Controller
             'name' => 'required|string|max:20',
             'email' => 'required|email',
             'intro' => 'max:500',
-            'image' => 'image|max:3072',
+            'icon' => 'image|max:3072',
         ],[
             'name.required'=>'ユーザー名は入力必須です',
             'name.max'=>'ユーザー名は20文字以下でご入力ください',
             'email.required'=>'メールアドレスは入力必須です',
             'email.email'=>'メールアドレスをご入力ください',
             'intro.max'=>'自己紹介は500文字以下でご入力ください',
-            'image.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
+            'icon.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
             'uploaded' => '画像は3MB以下にしてください',
         ]);
 
