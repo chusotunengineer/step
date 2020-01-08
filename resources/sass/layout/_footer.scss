@@ -28,4 +28,9 @@
       flex-direction: column;
     }
   }
+  li {
+    @include mq() {
+      line-height: 2;
+    }
+  }
 }
