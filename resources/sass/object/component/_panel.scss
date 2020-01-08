@@ -28,7 +28,7 @@
   }
   &__title {
     text-align: center;
-    font-size: 20px;
+    font-size: $font-m;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -46,7 +46,7 @@
     width: 100%;
   }
   &__txt {
-    font-size: 16px;
+    font-size: $font-s;
     font-weight: normal;
   }
   &__badge {
@@ -54,7 +54,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 20px;
+    font-size: $font-m;
     transform: translate(30%, -30%);
     color: white;
     line-height: 4.5vw;

@@ -6,7 +6,7 @@
     margin: 100px 0 90px 0;
   }
   @include mq() {
-    padding-top: 65%;
+    padding-top: 100%;
   }
   &__copyWrap {
     position: absolute;
@@ -22,8 +22,8 @@
     margin-bottom: 40px;
     white-space: nowrap;
     color: $pure_black;
-    @include mq(xl) {
-      font-size: 6vw;
+    @include mq() {
+      font-size: 10vw;
       margin-bottom: 3vw;
     }
     &--accent {
@@ -31,7 +31,7 @@
     }
     &--small {
       color: $white;
-      font-size: 25px;
+      font-size: $font-l;
       font-family: $noto_sans;
       @include mq(xl) {
         font-size: 4vw;
@@ -54,7 +54,7 @@
     right: 5%;
     @include mq() {
       padding: 5px 10px;
-      font-size: 14px;
+      font-size: $font-ss;
     }
   }
 }

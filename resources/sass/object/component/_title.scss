@@ -1,13 +1,16 @@
 .c-title {
-  font-size: 30px;
+  font-size: $font-xl;
   margin-bottom: 40px;
   text-align: center;
+  @include mq() {
+    font-size: $font-l;
+  }
   &--m {
-    font-size: 25px;
+    font-size: $font-l;
     margin-bottom: 20px;
   }
   &--s {
-    font-size: 20px;
+    font-size: $font-m;
     margin-bottom: 20px;
   }
 }

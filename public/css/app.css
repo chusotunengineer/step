@@ -377,6 +377,12 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 790px) {
+  .c-title {
+    font-size: 25px;
+  }
+}
+
 .c-title--m {
   font-size: 25px;
   margin-bottom: 20px;
@@ -815,7 +821,7 @@ a:hover {
 
 @media screen and (max-width: 790px) {
   .p-hero {
-    padding-top: 65%;
+    padding-top: 100%;
   }
 }
 
@@ -837,9 +843,9 @@ a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 790px) {
   .p-hero__copy {
-    font-size: 6vw;
+    font-size: 10vw;
     margin-bottom: 3vw;
   }
 }

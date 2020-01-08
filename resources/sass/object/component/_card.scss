@@ -13,12 +13,12 @@
     text-align: center;
     line-height: 50px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: $font-m;
     @include mq(sm) {
       width: 15vw;
       height: 15vw;
       line-height: 15vw;
-      font-size: 30px;
+      font-size: $font-xl;
     }
   }
   &__txt {
