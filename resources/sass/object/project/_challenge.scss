@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   &__content {
     width: 70%;
+    @include mq() {
+      width: 100%;
+    }
   }
   &__txt {
     background: $light-gray;
@@ -12,8 +16,16 @@
   }
   &__sidebar {
     width: 25%;
+    @include mq() {
+      width: 100%;
+    }
   }
   &__currentStep {
     background-color: $light-gray;
+  }
+  .c-button {
+    @include mq() {
+      margin: 40px auto;
+    }
   }
 }

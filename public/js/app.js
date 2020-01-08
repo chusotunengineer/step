@@ -13485,11 +13485,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "p-challenge" }, [
     _c("div", { staticClass: "p-challenge__content" }, [
-      _vm.items.childStep
-        ? _c("h2", { staticClass: "c-title" }, [
-            _vm._v(_vm._s(_vm.items.childStep[_vm.current].name))
-          ])
-        : _vm._e(),
+      _c("h2", { staticClass: "c-title" }, [
+        _vm._v(_vm._s(_vm.items.childStep[_vm.current].name))
+      ]),
       _vm._v(" "),
       _c(
         "p",

@@ -1,7 +1,7 @@
 <template>
   <div class="p-challenge">
     <div class="p-challenge__content">
-      <h2 v-if="items.childStep" class="c-title">{{ items.childStep[current].name }}</h2>
+      <h2 class="c-title">{{ items.childStep[current].name }}</h2>
       <p
         class="p-challenge__txt"
         style="white-space: pre-wrap;"
