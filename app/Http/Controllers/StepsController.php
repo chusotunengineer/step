@@ -88,7 +88,8 @@ class StepsController extends Controller
             "content.required"=>'ステップの説明は入力必須です',
             "content.max"=>'ステップの説明は500文字以下でご入力ください',
             'image.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
-            'uploaded' => '画像は3MB以下にしてください',
+            'maxfile' => '画像は3MB以下にしてください',
+            'uploaded' => '不具合が発生しました。時間をおいて再度お試しください。'
         ]);
 
         $user_id = Auth::id();
@@ -150,7 +151,8 @@ class StepsController extends Controller
             "content.required"=>'ステップの説明は入力必須です',
             "content.max"=>'ステップの説明は500文字以下でご入力ください',
             'image.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
-            'uploaded' => '画像は3MB以下にしてください',
+            'maxfile' => '画像は3MB以下にしてください',
+            'uploaded' => '不具合が発生しました。時間をおいて再度お試しください。'
         ]);
 
         // リクエストを配列に格納して、親ステップのIDを変数に格納
