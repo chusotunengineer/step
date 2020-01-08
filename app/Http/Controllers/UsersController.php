@@ -36,7 +36,6 @@ class UsersController extends Controller
         ユーザー名は必須、20文字以下、string型
         メールアドレスは必須、emailの形式
         自己紹介はstring形、500文字以下
-        アイコンは画像で、3MB以下
         */
         $request->validate([
             'name' => 'required|string|max:20',
@@ -107,7 +106,7 @@ class UsersController extends Controller
             // jpg形式にエンコード
             $icon = Image::make($icon)->encode('jpg');
             // ファイル名をハッシュ化
-            $hash = md5($image->__toString());
+            $hash = md5($icon->__toString());
             // 保存用パスに書き換え
             $path = "app/public/{$hash}.jpg";
             // storageフォルダに保存
