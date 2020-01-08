@@ -28,7 +28,7 @@ export default {
     // ステップ詳細に子ステップの目次を表示するために、リクエストして結果をitemsに格納
     request() {
       axios
-        .get("/steps/ajax?id=" + this.parent_id)
+        .get("steps/ajax?id=" + this.parent_id)
         .then(res => {
           console.log(res.data);
           let result = res.data;
