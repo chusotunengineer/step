@@ -694,6 +694,15 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .c-panel__badge {
+    width: 18vw;
+    height: 18vw;
+    line-height: 18vw;
+    font-size: 5.5vw;
+  }
+}
+
 .c-hamburger {
   width: 40px;
   height: 32px;
