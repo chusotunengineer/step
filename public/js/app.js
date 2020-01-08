@@ -2121,7 +2121,7 @@ __webpack_require__.r(__webpack_exports__);
     request: function request() {
       var _this = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("../mypage/my-step").then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("mypage/my-step").then(function (res) {
         console.log(res.data);
         var result = res.data;
         _this.items = result;
