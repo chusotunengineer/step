@@ -57,6 +57,7 @@
     }
     @include mq(sm) {
       width: 100%;
+      margin-bottom: 20px;
     }
     &__imgWrap {
       position: relative;

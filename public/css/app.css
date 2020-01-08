@@ -1165,6 +1165,7 @@ a:hover {
 @media screen and (max-width: 520px) {
   .p-detail__authorIcon {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
