@@ -187,6 +187,11 @@ textarea {
 }
 
 body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   min-height: 100vh;
 }
 
