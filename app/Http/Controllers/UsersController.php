@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\EmailChanged;
 
+// 画像縮小のために使用
+use Intervention\Image\Facades\Image;
+
 class UsersController extends Controller
 {
     // マイページのviewとログインしているユーザー情報を渡す
@@ -92,8 +95,26 @@ class UsersController extends Controller
 
         // アイコンが送信されていれば画像を保存し、読み込みのために画像パスを書き換えて保存
         if(file_exists($icon)){
-            $save_path = $icon->store('public');
-            $read_path = str_replace('public/', 'storage/', $save_path);
+            // アップロードされた画像の横幅を取得
+            $width = Image::make($icon)->width();
+            // もし横幅が1080pxより大きかった場合、縦横比を維持したまま1080pxに縮小
+            if($width > 1080){
+                $icon = Image::make($icon)
+                ->resize(1080, null, function ($constraint) {
+                    $constraint->aspectRatio();
+                });
+            }
+            // jpg形式にエンコード
+            $icon = Image::make($icon)->encode('jpg');
+            // ファイル名をハッシュ化
+            $hash = md5($image->__toString());
+            // 保存用パスに書き換え
+            $path = "app/public/{$hash}.jpg";
+            // storageフォルダに保存
+            $icon->save(storage_path($path));
+            // 読み込み用にパスを書き換え
+            $read_path = str_replace('app/public/', 'storage/', $path);
+
             $post += array('icon' => $read_path);
         }
 
