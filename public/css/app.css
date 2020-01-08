@@ -459,6 +459,12 @@ a:hover {
   margin: auto;
 }
 
+@media screen and (max-width: 790px) {
+  .c-form {
+    width: 100%;
+  }
+}
+
 .c-form__row {
   position: relative;
   display: -webkit-box;
