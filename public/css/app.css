@@ -1116,6 +1116,10 @@ a:hover {
   margin-bottom: 40px;
 }
 
+.p-detail__child :last-child {
+  margin-bottom: 0;
+}
+
 .p-detail__child__contentWrap {
   display: block;
   width: 100%;
