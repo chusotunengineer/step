@@ -1,5 +1,9 @@
 .p-logo {
   width: 250px;
+  @include mq() {
+    width: auto;
+    height: 40px;
+  }
   &__footer {
     @include mq() {
       margin-bottom: 40px;

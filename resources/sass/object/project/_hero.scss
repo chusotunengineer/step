@@ -5,6 +5,9 @@
   @include mq(xl) {
     margin: 100px 0 90px 0;
   }
+  @include mq() {
+    padding-top: 65%;
+  }
   &__copyWrap {
     position: absolute;
     top: 50%;
