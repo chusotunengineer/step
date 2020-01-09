@@ -11,7 +11,7 @@ return [
     |
     */
     'max'                  => [
-        'file'    => '画像は3MB以下のファイルにしてください。',
+        'file'    => '画像は3MB以下にしてください',
     ],
     'custom' => [
         'attribute-name' => [
