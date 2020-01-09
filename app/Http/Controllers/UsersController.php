@@ -95,10 +95,9 @@ class UsersController extends Controller
 
         // アイコンが送信されていれば画像を保存し、読み込みのために画像パスを書き換えて保存
         if(file_exists($icon)){
-            // アップロードされた画像の横幅を取得
-            $width = Image::make($icon)->width();
-            // もし横幅が1080pxより大きかった場合、縦横比を維持したまま1080pxに縮小
-            $icon = Image::make($icon)->resize(1080, null, function ($constraint) {
+            // 画像を横幅1080pxにリサイズ
+            $icon = Image::make($icon)
+            ->resize(1080, null, function ($constraint) {
                 $constraint->aspectRatio();
             });
             // jpg形式にエンコード

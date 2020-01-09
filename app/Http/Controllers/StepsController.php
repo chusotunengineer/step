@@ -103,15 +103,11 @@ class StepsController extends Controller
         // イメージ画像が送られていれば画像を保存して、読み込み用にパスを書き換え、DBに保存
         // なければno_imageの画像のパスをDBに保存
         if(file_exists($image)){
-            // アップロードされた画像の横幅を取得
-            $width = Image::make($image)->width();
-            // もし横幅が1080pxより大きかった場合、縦横比を維持したまま1080pxに縮小
-            if($width > 1080){
-                $image = Image::make($image)
-                ->resize(1080, null, function ($constraint) {
-                    $constraint->aspectRatio();
-                });
-            }
+            // 画像を横幅1080pxにリサイズ
+            $image = Image::make($image)
+            ->resize(1080, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
             // jpg形式にエンコード
             $image = Image::make($image)->encode('jpg');
             // ファイル名をハッシュ化
@@ -182,15 +178,11 @@ class StepsController extends Controller
             unset($post['image']);
         }else{
             $image = $post['image'];
-            // アップロードされた画像の横幅を取得
-            $width = Image::make($image)->width();
-            // もし横幅が1080pxより大きかった場合、縦横比を維持したまま1080pxに縮小
-            if($width > 1080){
-                $image = Image::make($image)
-                ->resize(1080, null, function ($constraint) {
-                    $constraint->aspectRatio();
-                });
-            }
+            // 画像を横幅1080pxにリサイズ
+            $image = Image::make($image)
+            ->resize(1080, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
             // jpg形式にエンコード
             $image = Image::make($image)->encode('jpg');
             // ファイル名をハッシュ化
