@@ -98,12 +98,9 @@ class UsersController extends Controller
             $width = Image::make($icon)->width();
             // もし横幅が1080pxより大きかった場合、縦横比を維持したまま1080pxに縮小
             \Log::info('ログ出力');
-            if($width > 1080){
-                $icon = Image::make($icon)
-                ->resize(1080, null, function ($constraint) {
-                    $constraint->aspectRatio();
-                });
-            }
+            $icon = Image::make($icon)->resize(1080, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
             // jpg形式にエンコード
             $icon = Image::make($icon)->encode('jpg');
             // ファイル名をハッシュ化
