@@ -36,12 +36,13 @@ class UsersController extends Controller
         ユーザー名は必須、20文字以下、string型
         メールアドレスは必須、emailの形式
         自己紹介はstring形、500文字以下
+        アイコンは3MB以下、画像ファイル
         */
         $request->validate([
             'name' => 'required|string|max:20',
             'email' => 'required|email',
             'intro' => 'max:500',
-            'icon' => 'image|max:3000',
+            'icon' => 'image|max:3072',
         ],[
             'name.required'=>'ユーザー名は入力必須です',
             'name.max'=>'ユーザー名は20文字以下でご入力ください',
@@ -49,7 +50,6 @@ class UsersController extends Controller
             'email.email'=>'メールアドレスをご入力ください',
             'intro.max'=>'自己紹介は500文字以下でご入力ください',
             'icon.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
-            'validation.max.file' => '画像サイズを3MB以下にしてください',
             'uploaded' => '不具合が発生しました。時間をおいて再度お試しください。'
         ]);
 

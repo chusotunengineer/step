@@ -84,7 +84,7 @@ class StepsController extends Controller
             'name' => 'required|string|max:30',
             'content' => 'required|string|max:500',
             'category_id' => 'required|integer',
-            'image' => 'image',
+            'image' => 'image|max:3072',
         ],[
             'name.required'=>'タイトルは入力必須です',
             'name.max'=>'タイトルは30文字以下でご入力ください',
@@ -163,7 +163,7 @@ class StepsController extends Controller
             'name' => 'required|string|max:30',
             'content' => 'required|string',
             'category_id' => 'required|integer',
-            'image' => 'image',
+            'image' => 'image|max:3072',
         ],[
             'name.required'=>'タイトルは入力必須です',
             'name.max'=>'タイトルは30文字以下でご入力ください',
