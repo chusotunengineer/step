@@ -43,11 +43,13 @@
     <a href="steps/challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-mx_auto">
       チャレンジ！
     </a>
-    <a href="https://twitter.com/intent/tweet?button_hashtag=ステップ&ref_src=twsrc%5Etfw&url=http://step-webukatu.sakura.ne.jp/step/public/steps/challenge%3fid%3D{{ $step['id'] }}&text=挑戦を共有するサービス『STEP』で、「{{ $step['name'] }}」に挑戦しよう！" class="twitter-hashtag-button" data-show-count="false">Tweet #ステップ</a>
+    <!-- シェアボタン用 -->
+    <a href="https://twitter.com/intent/tweet?button_hashtag=ステップ&ref_src=twsrc%5Etfw&url=http://step-webukatu.sakura.ne.jp/step/public/steps/%3fid%3D{{ $step['id'] }}&text=挑戦を共有するサービス『STEP』で、「{{ $step['name'] }}」に挑戦しよう！" class="twitter-hashtag-button" data-show-count="false">Tweet #ステップ</a>
   </div>
 </section>
 @endsection
 @section('footer')
 @parent
+<!-- シェアボタン用 -->
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 @endsection
