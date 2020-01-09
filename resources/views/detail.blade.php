@@ -44,7 +44,7 @@
       チャレンジ！
     </a>
     <!-- シェアボタン用 -->
-    <a href="https://twitter.com/intent/tweet?button_hashtag=ステップ&ref_src=twsrc%5Etfw&url=http://step-webukatu.sakura.ne.jp/step/public/steps/%3fid%3D{{ $step['id'] }}&text=挑戦を共有するサービス『STEP』で、「{{ $step['name'] }}」に挑戦しよう！" class="twitter-hashtag-button" data-show-count="false">Tweet #ステップ</a>
+    <a href="https://twitter.com/intent/tweet?button_hashtag=ステップ&ref_src=twsrc%5Etfw&url=http://step-webukatu.sakura.ne.jp/step/public/steps%3fid%3D{{ $step['id'] }}&text=挑戦を共有するサービス『STEP』で、「{{ $step['name'] }}」に挑戦しよう！" class="twitter-hashtag-button" data-show-count="false">Tweet</a>
   </div>
 </section>
 @endsection
