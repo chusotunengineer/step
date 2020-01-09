@@ -1,5 +1,11 @@
 <?php  // resources/lang/ja/validation.php
 return [
+    'max'                  => [
+        'numeric' => ':attributeは:max以下にしてください。',
+        'file'    => ':attributeは:3MB以下のファイルにしてください。.',
+        'string'  => ':attributeは:max文字以下にしてください。',
+        'array'   => ':attributeは:max個以下にしてください。',
+    ],
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
