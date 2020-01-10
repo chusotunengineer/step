@@ -1,6 +1,6 @@
 .p-logo {
   width: 250px;
-  @include mq() {
+  @include mq(lg) {
     width: auto;
     height: 50px;
   }
