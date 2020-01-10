@@ -24,11 +24,14 @@
   &__txt {
     display: block;
     text-align: center;
+    width: 90%;
+    margin-left: auto;
   }
   &__imgWrap {
     position: relative;
     width: 100%;
     padding-top: 70.8695%;
+    margin-bottom: 10px;
   }
   &__img {
     &--numList {

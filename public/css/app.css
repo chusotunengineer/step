@@ -443,12 +443,15 @@ a:hover {
 .c-card__txt {
   display: block;
   text-align: center;
+  width: 90%;
+  margin-left: auto;
 }
 
 .c-card__imgWrap {
   position: relative;
   width: 100%;
   padding-top: 70.8695%;
+  margin-bottom: 10px;
 }
 
 .c-card__img--numList {

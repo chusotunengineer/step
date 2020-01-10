@@ -24,19 +24,19 @@
   <div class="p-target">
     <div class="p-target__item">
       <div class="p-target__imgWrap">
-        <img src="{{ asset('img/top01.png') }}" alt="target" class="p-target__img">
+        <img src="{{ asset('img/top01@2x.png') }}" alt="target" class="p-target__img">
       </div>
       <span class="p-target__txt">何から始めるべきか<br>分からない</span>
     </div>
     <div class="p-target__item">
       <div class="p-target__imgWrap">
-        <img src="{{ asset('img/top02.png') }}" alt="target" class="p-target__img">
+        <img src="{{ asset('img/top02@2x.png') }}" alt="target" class="p-target__img">
       </div>
       <span class="p-target__txt">長く続かない</span>
     </div>
     <div class="p-target__item">
       <div class="p-target__imgWrap">
-        <img src="{{ asset('img/top03.png') }}" alt="target" class="p-target__img">
+        <img src="{{ asset('img/top03@2x.png') }}" alt="target" class="p-target__img">
       </div>
       <span class="p-target__txt">なんとなく不安</span>
     </div>
@@ -71,28 +71,28 @@
     <div class="c-card">
       <span class="c-card__num">1</span>
       <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
+        <img src="{{ asset('img/card01@4x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
       <span class="c-card__txt">ユーザー登録</span>
     </div>
     <div class="c-card">
       <span class="c-card__num">2</span>
       <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
+        <img src="{{ asset('img/card02@4x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
       <span class="c-card__txt">挑戦するステップを選ぶ</span>
     </div>
     <div class="c-card">
       <span class="c-card__num">3</span>
       <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
+        <img src="{{ asset('img/card03@4x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
       <span class="c-card__txt">1つずつステップをクリア</span>
     </div>
     <div class="c-card">
       <span class="c-card__num">4</span>
       <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
+        <img src="{{ asset('img/card04@4x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
       <span class="c-card__txt">全ステップ達成を目指そう！</span>
     </div>
