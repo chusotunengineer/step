@@ -33,7 +33,7 @@ class UsersController extends Controller
         ユーザー名は必須、20文字以下、string型
         メールアドレスは必須、emailの形式
         自己紹介はstring形、500文字以下
-        アイコンは3MB以下、画像ファイル
+        アイコンは画像ファイル、500kb以下
         */
         $request->validate([
             'name' => 'required|string|max:20',
