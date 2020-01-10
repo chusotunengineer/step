@@ -375,8 +375,8 @@ a:hover {
 
 .c-button--transparent {
   background: transparent;
-  border-color: #fafafa;
-  color: #fafafa;
+  border-color: #fff;
+  color: #fff;
 }
 
 .c-button--wide {
@@ -418,7 +418,7 @@ a:hover {
   height: 50px;
   border-radius: 50%;
   background: #e98d14;
-  color: #fafafa;
+  color: #fff;
   text-align: center;
   line-height: 50px;
   font-weight: bold;
@@ -592,12 +592,12 @@ a:hover {
 }
 
 .c-bread__arrow {
-  color: #fafafa;
+  color: #fff;
   margin: 0 10px;
 }
 
 .c-bread__txt {
-  color: #fafafa;
+  color: #fff;
 }
 
 .c-panel {
@@ -716,7 +716,7 @@ a:hover {
 }
 
 .c-hamburger.active .c-hamburger__line {
-  background: #fafafa;
+  background: #fff;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -789,11 +789,11 @@ a:hover {
 
 .c-hamburger__nav li {
   padding: 16px 0 16px 14px;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #fff;
 }
 
 .c-hamburger__nav a {
-  color: #fafafa;
+  color: #fff;
 }
 
 .c-hamburger__nav.active {
@@ -831,7 +831,7 @@ a:hover {
 }
 
 .p-nav__item--white {
-  color: #fafafa;
+  color: #fff;
 }
 
 .p-hero {
@@ -882,7 +882,7 @@ a:hover {
 }
 
 .p-hero__copy--small {
-  color: #fafafa;
+  color: #fff;
   font-size: 25px;
   font-family: "Noto Sans", sans-serif;
 }
@@ -955,25 +955,69 @@ a:hover {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-}
-
-@media screen and (max-width: 520px) {
-  .p-manual {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-  }
+  flex-wrap: wrap;
 }
 
 .p-manual .c-card {
   width: 23%;
 }
 
+@media screen and (max-width: 790px) {
+  .p-manual .c-card {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .p-manual .c-card {
     width: 100%;
-    margin-bottom: 20px;
   }
+}
+
+.p-target {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.p-target__item {
+  width: 31%;
+}
+
+@media screen and (max-width: 790px) {
+  .p-target__item {
+    width: 80%;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.p-target__imgWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #f8f4e6;
+}
+
+.p-target__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.p-target__txt {
+  display: block;
+  font-size: 25px;
+  text-align: center;
 }
 
 .p-mypage {

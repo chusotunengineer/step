@@ -19,6 +19,31 @@
 </div>
 <section class="l-sec">
   <h2 class="c-title">
+    挑戦したいことはあるけれど・・・
+  </h2>
+  <div class="p-target">
+    <div class="p-target__item">
+      <div class="p-target__imgWrap">
+        <img src="{{ asset('img/top01.png') }}" alt="target" class="p-target__img">
+      </div>
+      <span class="p-target__txt">何から始めるべきか分からない</span>
+    </div>
+    <div class="p-target__item">
+      <div class="p-target__imgWrap">
+        <img src="{{ asset('img/top02.png') }}" alt="target" class="p-target__img">
+      </div>
+      <span class="p-target__txt">長く続かない</span>
+    </div>
+    <div class="p-target__item">
+      <div class="p-target__imgWrap">
+        <img src="{{ asset('img/top03.png') }}" alt="target" class="p-target__img">
+      </div>
+      <span class="p-target__txt">なんとなく不安</span>
+    </div>
+  </div>
+</section>
+<section class="l-sec">
+  <h2 class="c-title">
     あなたの人生のSTEPを共有しよう<br>
     挑戦を共有するサービス『STEP』
   </h2>
@@ -70,41 +95,6 @@
         <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
       <span class="c-card__txt">子ステップをすべてクリアしたら<br>ステップ達成！</span>
-    </div>
-  </div>
-</section>
-<section class="l-sec">
-  <h2 class="c-title">
-    自分のステップを投稿する
-  </h2>
-  <div class="p-manual">
-    <div class="c-card">
-      <span class="c-card__num">1</span>
-      <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
-      </div>
-      <span class="c-card__txt">ユーザー登録</span>
-    </div>
-    <div class="c-card">
-      <span class="c-card__num">2</span>
-      <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
-      </div>
-      <span class="c-card__txt">ステップ名・コンセプトを決める</span>
-    </div>
-    <div class="c-card">
-      <span class="c-card__num">3</span>
-      <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
-      </div>
-      <span class="c-card__txt">ステップを達成するための<br>子ステップを作成</span>
-    </div>
-    <div class="c-card">
-      <span class="c-card__num">4</span>
-      <div class="c-card__imgWrap">
-        <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
-      </div>
-      <span class="c-card__txt">ステップを投稿！</span>
     </div>
   </div>
 </section>

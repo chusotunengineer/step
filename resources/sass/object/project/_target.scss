@@ -1,0 +1,35 @@
+.p-target {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    width: 31%;
+    @include mq() {
+      width: 80%;
+      margin: 0 auto 40px auto;
+    }
+  }
+  &__imgWrap {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: $beige;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__txt {
+    display: block;
+    font-size: $font-l;
+    text-align: center;
+  }
+}
