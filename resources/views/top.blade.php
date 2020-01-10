@@ -26,7 +26,7 @@
       <div class="p-target__imgWrap">
         <img src="{{ asset('img/top01.png') }}" alt="target" class="p-target__img">
       </div>
-      <span class="p-target__txt">何から始めるべきか分からない</span>
+      <span class="p-target__txt">何から始めるべきか<br>分からない</span>
     </div>
     <div class="p-target__item">
       <div class="p-target__imgWrap">
@@ -87,14 +87,14 @@
       <div class="c-card__imgWrap">
         <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
-      <span class="c-card__txt">1つずつ子ステップをクリア</span>
+      <span class="c-card__txt">1つずつステップをクリア</span>
     </div>
     <div class="c-card">
       <span class="c-card__num">4</span>
       <div class="c-card__imgWrap">
         <img src="{{ asset('img/card01@2x.jpg') }}" alt="howto" class="c-card__img c-card__img--numList">
       </div>
-      <span class="c-card__txt">子ステップをすべてクリアしたら<br>ステップ達成！</span>
+      <span class="c-card__txt">全ステップ達成を目指そう！</span>
     </div>
   </div>
 </section>
