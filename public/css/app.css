@@ -447,6 +447,12 @@ a:hover {
   margin-left: auto;
 }
 
+@media screen and (max-width: 520px) {
+  .c-card__txt {
+    width: 100%;
+  }
+}
+
 .c-card__imgWrap {
   position: relative;
   width: 100%;
