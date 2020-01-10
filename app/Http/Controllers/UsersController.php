@@ -39,7 +39,7 @@ class UsersController extends Controller
             'name' => 'required|string|max:20',
             'email' => 'required|email',
             'intro' => 'max:500',
-            'icon' => 'image|max:3072',
+            'icon' => 'image|max:500',
         ],[
             'name.required'=>'ユーザー名は入力必須です',
             'name.max'=>'ユーザー名は20文字以下でご入力ください',
