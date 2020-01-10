@@ -5,8 +5,9 @@
   flex-wrap: wrap;
   &__content {
     width: 70%;
-    @include mq() {
+    @include mq(lg) {
       width: 100%;
+      margin-bottom: 40px;
     }
   }
   &__txt {
@@ -16,7 +17,7 @@
   }
   &__sidebar {
     width: 25%;
-    @include mq() {
+    @include mq(lg) {
       width: 100%;
     }
   }

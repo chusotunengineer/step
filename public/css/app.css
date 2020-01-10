@@ -691,6 +691,15 @@ a:hover {
   height: 4.5vw;
 }
 
+@media screen and (max-width: 1200px) {
+  .c-panel__badge {
+    width: 7vw;
+    height: 7vw;
+    line-height: 7vw;
+    font-size: 2.8vw;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .c-panel__badge {
     width: 12vw;
@@ -1288,9 +1297,10 @@ a:hover {
   width: 70%;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1025px) {
   .p-challenge__content {
     width: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -1304,7 +1314,7 @@ a:hover {
   width: 25%;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1025px) {
   .p-challenge__sidebar {
     width: 100%;
   }
