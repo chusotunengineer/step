@@ -178,8 +178,21 @@ class StepsController extends Controller
             unset($post['image']);
         }else{
             $image = $post['image'];
-            $save_path = $image->store('public');
-            $read_path = str_replace('public/', 'storage/', $save_path);
+            // 画像を横幅1080pxにリサイズ
+            $resize = Image::make($image)
+            ->resize(1080, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+            // jpg形式にエンコード
+            $resize = Image::make($resize)->encode('jpg');
+            // ファイル名をハッシュ化
+            $hash = md5($resize->__toString());
+            // 保存用パスに書き換え
+            $path = "app/public/{$hash}.jpg";
+            // storageフォルダに保存
+            $resize->save(storage_path($path));
+            // 読み込み用にパスを書き換え
+            $read_path = str_replace('app/public/', 'storage/', $path);
 
             $post['image'] = $read_path;
         }
