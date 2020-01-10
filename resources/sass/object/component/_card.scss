@@ -26,6 +26,7 @@
     text-align: center;
     width: 90%;
     margin-left: auto;
+    font-size: $font-s;
     @include mq(sm) {
       width: 100%;
     }
