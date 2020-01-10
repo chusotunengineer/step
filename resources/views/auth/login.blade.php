@@ -49,12 +49,9 @@
         自動でログイン
       </label>
     </div>
-    <button id="js_btn_click_hide" type="submit" class="c-button c-button--wide u-mx_auto">
+    <button type="submit" class="c-button c-button--wide u-mx_auto">
       ログイン
     </button>
-    <div id="js_btn_click_show" class="c-form__loadingImg">
-      <img src="{{ asset('img/loading.gif') }}" alt="" class="c-form__loadingImg">
-    </div>
   </form>
 </section>
 @endsection

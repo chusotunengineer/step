@@ -26931,19 +26931,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 // jQuery
- // フォームの二重送信防止
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('form').on('submit', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js_btn_click_hide').hide();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js_btn_click_show').show(); // 10秒後に元に戻す
-
-    setTimeout(function () {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js_btn_click_hide').show();
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#js_btn_click_show').hide();
-    }, 10000);
-  });
-}); // ハンバーガーメニュー
+ // ハンバーガーメニュー
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   var $btn = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js_toggle_btn");

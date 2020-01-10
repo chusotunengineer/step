@@ -1,20 +1,6 @@
 // jQuery
 import $ from 'jquery';
 
-// フォームの二重送信防止
-$(function () {
-  $('form').on('submit', function () {
-    $('#js_btn_click_hide').hide();
-    $('#js_btn_click_show').show();
-
-    // 10秒後に元に戻す
-    setTimeout(function () {
-      $('#js_btn_click_hide').show();
-      $('#js_btn_click_show').hide();
-    }, 10000);
-  });
-});
-
 // ハンバーガーメニュー
 $(function () {
   var $btn = $(".js_toggle_btn");
