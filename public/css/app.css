@@ -557,10 +557,9 @@ a:hover {
   height: 300px;
 }
 
-.c-form__link {
+.c-form__linkWrap {
   text-align: right;
   margin-bottom: 10px;
-  display: inline-block;
 }
 
 .c-form__checkWrap {

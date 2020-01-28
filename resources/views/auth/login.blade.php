@@ -39,9 +39,11 @@
       </div>
     </div>
     @if (Route::has('password.request'))
-    <a class="c-form__link" href="{{ route('password.request') }}">
-      パスワードをお忘れですか？
-    </a>
+    <div class="c-form__linkWrap">
+      <a class="c-form__link" href="{{ route('password.request') }}">
+        パスワードをお忘れですか？
+      </a>
+    </div>
     @endif
     <div class="c-form__checkWrap">
       <input class="c-form__check" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
