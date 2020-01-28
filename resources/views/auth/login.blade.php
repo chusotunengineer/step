@@ -39,7 +39,7 @@
       </div>
     </div>
     @if (Route::has('password.request'))
-    <a class="c-form__link u-d_block" href="{{ route('password.request') }}">
+    <a class="c-form__link" href="{{ route('password.request') }}">
       パスワードをお忘れですか？
     </a>
     @endif
