@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\EmailChanged;
 
 class UsersController extends Controller
 {
