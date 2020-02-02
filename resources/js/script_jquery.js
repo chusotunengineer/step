@@ -3,8 +3,8 @@ import $ from 'jquery';
 
 // ハンバーガーメニュー
 $(function () {
-  var $btn = $(".js_toggle_btn");
-  var $nav = $(".js_slide_nav");
+  const $btn = $(".js_toggle_btn");
+  const $nav = $(".js_slide_nav");
 
   // $btnがクリックされたら.activeをつけ外しする
   $btn.on("click", function () {
