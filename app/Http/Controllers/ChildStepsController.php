@@ -7,8 +7,6 @@ use App\Step;
 use App\ChildStep;
 use Illuminate\Support\Facades\Auth;
 
-use Illuminate\Support\Facades\Log;
-
 class ChildStepsController extends Controller
 {
 
