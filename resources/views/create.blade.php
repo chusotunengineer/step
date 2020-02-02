@@ -13,7 +13,6 @@
 <section class="l-sec">
   <h2 class="c-title">
     ステップ作成
-    <?php var_dump($post); ?>
   </h2>
   <div class="p-mypage">
     <form method="post" action="{{ route('create') }}" class="c-form" enctype="multipart/form-data">

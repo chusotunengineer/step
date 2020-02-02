@@ -63,7 +63,7 @@ class RegisterController extends Controller
             'email.unique'=>'このメールアドレスは既に登録されています',
             'min'=>'パスワードは8文字以上でご入力ください',
             'confirmed'=>'再入力されたパスワードが一致しません'
-      ]);
+        ]);
     }
 
     /**

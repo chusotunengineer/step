@@ -58,10 +58,10 @@ class UsersController extends Controller
 
         // ユーザー名に変更があった場合、重複しないか追加でバリデーションする
         if($user['name'] !== $user_name){
-          $request->validate(
-            ['name'=>'unique:users'],
-            ['name.unique'=>'このユーザー名は既に登録されています',]
-          );
+            $request->validate(
+                ['name'=>'unique:users'],
+                ['name.unique'=>'このユーザー名は既に登録されています',]
+            );
         }
         // メールアドレスに変更があった場合、重複しないか追加でバリデーションする
         if($user['email'] !== $email){

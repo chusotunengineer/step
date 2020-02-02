@@ -40,6 +40,6 @@ class LoginController extends Controller
     // ログアウトしたらトップページにリダイレクトさせる
     protected function loggedOut(Request $request)
     {
-      return $this->loggedOut($request) ?: redirect(route('top'));
+        return $this->loggedOut($request) ?: redirect(route('top'));
     }
 }

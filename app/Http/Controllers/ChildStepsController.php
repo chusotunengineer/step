@@ -90,26 +90,26 @@ class ChildStepsController extends Controller
 
     // 子ステップ編集フォームでDBに保存されているデータを取得するために、DBの子ステップ情報をjsonで返す
     public function editAjax(){
-      $childStep = ChildStep::where('parent_id', $_GET['id'])->get();
-      return $childStep;
+        $childStep = ChildStep::where('parent_id', $_GET['id'])->get();
+        return $childStep;
     }
 
     // リクエストをもとに子ステップの情報を更新する
     public function update(Request $request){
-      $posts = $request->all();
+        $posts = $request->all();
 
-      // リクエストで何個のフォームが作成されたかを確認して、その回数レコードを更新する
-      for($i=1; $i<=$posts['count']; $i++){
-        $childStep = ChildStep::where([['parent_id', $posts['parent_id']],['order', $i]])->first();
+        // リクエストで何個のフォームが作成されたかを確認して、その回数レコードを更新する
+        for($i=1; $i<=$posts['count']; $i++){
+            $childStep = ChildStep::where([['parent_id', $posts['parent_id']],['order', $i]])->first();
 
-        $name = 'name'.$i;
-        $content = 'content'.$i;
+            $name = 'name'.$i;
+            $content = 'content'.$i;
 
-        $post = array('name' => $posts[$name], 'content' => $posts[$content]);
+            $post = array('name' => $posts[$name], 'content' => $posts[$content]);
 
-        $childStep->fill($post)->save();
-      }
+            $childStep->fill($post)->save();
+        }
 
-      return redirect(route('mypage'));
+        return redirect(route('mypage'));
     }
 }
