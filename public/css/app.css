@@ -832,6 +832,7 @@ a:hover {
 .c-time {
   text-align: right;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .p-logo {
