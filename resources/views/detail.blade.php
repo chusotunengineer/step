@@ -16,6 +16,9 @@
   <h2 class="c-title">
     {{ $step['name'] }}
   </h2>
+  <p class="c-time">
+    目安達成時間： {{ $step['time'] ? $step['time'] : '未入力' }}
+  </p>
   <div class="p-detail">
     <div class="p-detail__content">
       <p class="p-detail__txt">
