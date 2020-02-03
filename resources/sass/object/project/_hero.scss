@@ -1,7 +1,7 @@
 .p-hero {
   position: relative;
   padding-top: 50%;
-  margin-bottom: 90px;
+  margin-bottom: $margin-xl;
   @include mq(xl) {
     margin: 100px 0 90px 0;
   }

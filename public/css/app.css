@@ -862,7 +862,7 @@ a:hover {
 .p-hero {
   position: relative;
   padding-top: 50%;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 1200px) {
