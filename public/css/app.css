@@ -829,6 +829,11 @@ a:hover {
   opacity: 1;
 }
 
+.c-time {
+  text-align: right;
+  font-weight: bold;
+}
+
 .p-logo {
   width: 250px;
 }
