@@ -29,7 +29,7 @@
     width: 25%;
     @include mq() {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: $margin-m;
     }
   }
   &__inputWrap {

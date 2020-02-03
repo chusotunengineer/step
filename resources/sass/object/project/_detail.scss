@@ -32,7 +32,7 @@
       width: 100%;
       border: 2px solid $main;
       padding: 10px 20px;
-      margin-bottom: 20px;
+      margin-bottom: $margin-m;
       border-radius: 4px;
     }
     &__title {
@@ -60,7 +60,7 @@
     }
     @include mq(sm) {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: $margin-m;
     }
     &__imgWrap {
       position: relative;
@@ -79,7 +79,7 @@
     width: 80%;
     @include mq(sm) {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: $margin-m;
     }
     &__txt {
       width: 100%;

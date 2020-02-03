@@ -6,7 +6,7 @@
     width: 23%;
     @include mq() {
       width: 50%;
-      margin-bottom: 20px;
+      margin-bottom: $margin-m;
     }
     @include mq(sm) {
       width: 100%;

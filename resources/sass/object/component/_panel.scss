@@ -7,7 +7,7 @@
   border: 2px solid $main;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: $margin-m;
   padding: 20px;
   width: calc(50% - 10px);
   height: 500px;
@@ -36,7 +36,7 @@
     position: relative;
     width: 100%;
     padding-top: 56%;
-    margin-bottom: 20px;
+    margin-bottom: $margin-m;
   }
   &__img {
     position: absolute;
