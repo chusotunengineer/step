@@ -3,7 +3,7 @@
   padding-top: 50%;
   margin-bottom: $margin-xl;
   @include mq(xl) {
-    margin: 100px 0 90px 0;
+    margin: $margin-3l 0 $margin-xl 0;
   }
   @include mq() {
     padding-top: 100%;

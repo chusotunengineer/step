@@ -4,7 +4,7 @@
   background: $navy;
   padding: 5px 0;
   @include mq(xl) {
-    margin: 100px auto 40px auto;
+    margin: $margin-3l auto $margin-l auto;
   }
   &__content {
     width: 1100px;
@@ -16,7 +16,7 @@
   }
   &__arrow {
     color: $white;
-    margin: 0 10px;
+    margin: 0 $margin-s;
   }
   &__txt {
     color: $white;

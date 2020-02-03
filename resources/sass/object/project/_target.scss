@@ -6,7 +6,7 @@
     width: 31%;
     @include mq() {
       width: 80%;
-      margin: 0 auto 40px auto;
+      margin: 0 auto $margin-l auto;
     }
   }
   &__imgWrap {

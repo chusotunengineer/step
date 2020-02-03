@@ -1,6 +1,6 @@
 .l-sec {
   width: 1100px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto $margin-xl auto;
   @include mq(xl) {
     width: 100%;
     padding: 0 20px;
