@@ -1,6 +1,6 @@
 .c-bread {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: $margin-l;
   background: $navy;
   padding: 5px 0;
   @include mq(xl) {

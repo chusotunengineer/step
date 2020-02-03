@@ -19,7 +19,7 @@
     font-family: $raleway;
     font-size: 90px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: $margin-l;
     white-space: nowrap;
     color: $pure_black;
     @include mq() {

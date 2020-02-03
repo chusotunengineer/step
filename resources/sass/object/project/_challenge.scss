@@ -7,7 +7,7 @@
     width: 70%;
     @include mq(lg) {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: $margin-l;
     }
   }
   &__txt {

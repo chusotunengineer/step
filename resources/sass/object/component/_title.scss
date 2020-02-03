@@ -1,6 +1,6 @@
 .c-title {
   font-size: $font-xl;
-  margin-bottom: 40px;
+  margin-bottom: $margin-l;
   text-align: center;
   @include mq() {
     font-size: $font-l;

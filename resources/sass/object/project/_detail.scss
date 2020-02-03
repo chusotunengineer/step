@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: $margin-l;
     @include mq() {
       flex-direction: column;
     }
@@ -12,7 +12,7 @@
     width: 48%;
     @include mq() {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: $margin-l;
     }
   }
   &__img {
@@ -23,7 +23,7 @@
     }
   }
   &__child {
-    margin-bottom: 40px;
+    margin-bottom: $margin-l;
     :last-child {
       margin-bottom: 0;
     }
@@ -47,7 +47,7 @@
     align-items: center;
     border: 2px solid $main;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: $margin-l;
     border-radius: 4px;
     @include mq(sm) {
       flex-direction: column;
