@@ -49,6 +49,17 @@
         </div>
       </div>
       <div class="c-form__row">
+        <label for="time" class="c-form__label">目安達成時間<br>（単位：時間）</label>
+        <div class="c-form__inputWrap">
+          <input type="number" class="c-form__input" name="time" value="{{ $step['time'] }}" placeholder="20">
+          @error('time')
+          <p>
+            <strong class="u-font--alert">{{ $message }}</strong>
+          </p>
+          @enderror
+        </div>
+      </div>
+      <div class="c-form__row">
         <label for="content" class="c-form__label">ステップの説明</label>
         <div class="c-form__inputWrap">
           <textarea id="content" type="text" class="c-form__textarea" name="content" required>{{ $step['content'] }}</textarea>

@@ -78,12 +78,14 @@ class StepsController extends Controller
         $request->validate([
             'name' => 'required|string|max:30',
             'content' => 'required|string|max:500',
-            'time' => 'integer|max:4',
+            'time' => 'integer|nullable|max:10000',
             'category_id' => 'required|integer',
             'image' => 'image|max:500',
         ],[
             'name.required'=>'タイトルは入力必須です',
             'name.max'=>'タイトルは30文字以下でご入力ください',
+            'time.max'=>'10000時間以下に設定してください',
+            'time.integer'=>'数字でご入力ください',
             'content.required'=>'ステップの説明は入力必須です',
             'content.max'=>'ステップの説明は500文字以下でご入力ください',
             'image.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
@@ -141,11 +143,14 @@ class StepsController extends Controller
         $request->validate([
             'name' => 'required|string|max:30',
             'content' => 'required|string',
+            'time' => 'integer|nullable|max:10000',
             'category_id' => 'required|integer',
             'image' => 'image|max:500',
         ],[
             'name.required'=>'タイトルは入力必須です',
             'name.max'=>'タイトルは30文字以下でご入力ください',
+            'time.max'=>'10000時間以下に設定してください',
+            'time.integer'=>'数字でご入力ください',
             'content.required'=>'ステップの説明は入力必須です',
             'content.max'=>'ステップの説明は500文字以下でご入力ください',
             'image.image' => '対応している拡張子は「jpg、png、bmp、gif、svg」のみです',
