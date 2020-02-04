@@ -22,9 +22,9 @@
         <div class="c-form__inputWrap">
           <input id="name" type="text" class="c-form__input" name="name" value="{{ old('name') }}" required autofocus>
           @error('name')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </p>
           @enderror
         </div>
       </div>
@@ -41,9 +41,20 @@
             <option value="7">その他</option>
           </select>
           @error('category_id')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </p>
+          @enderror
+        </div>
+      </div>
+      <div class="c-form__row">
+        <label for="time" class="c-form__label">目安達成時間</label>
+        <div class="c-form__inputWrap">
+          <input type="text" class="c-form__input" name="time" value="{{ old('time') }}">
+          @error('time')
+          <p>
+            <strong class="u-font--alert">{{ $message }}</strong>
+          </p>
           @enderror
         </div>
       </div>
@@ -52,9 +63,9 @@
         <div class="c-form__inputWrap">
           <textarea id="content" type="text" class="c-form__textarea" name="content" required>{{ old('content') }}</textarea>
           @error('content')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </p>
           @enderror
         </div>
       </div>
@@ -63,9 +74,9 @@
         <div class="c-form__inputWrap">
           <input id="image" type="file" class="c-form__input" name="image" accept="image/*">
           @error('image')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span><br>
+          </p>
           @enderror
         </div>
       </div>
