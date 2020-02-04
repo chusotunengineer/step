@@ -50,7 +50,7 @@
       <div class="c-form__row">
         <label for="time" class="c-form__label">目安達成時間<br>（単位：時間）</label>
         <div class="c-form__inputWrap">
-          <input type="text" class="c-form__input" name="time" value="{{ old('time') }}" placeholder="10.5">
+          <input type="number" class="c-form__input" name="time" value="{{ old('time') }}" placeholder="20">
           @error('time')
           <p>
             <strong class="u-font--alert">{{ $message }}</strong>

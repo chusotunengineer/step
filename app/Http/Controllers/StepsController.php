@@ -78,6 +78,7 @@ class StepsController extends Controller
         $request->validate([
             'name' => 'required|string|max:30',
             'content' => 'required|string|max:500',
+            'time' => 'integer|max:4',
             'category_id' => 'required|integer',
             'image' => 'image|max:500',
         ],[
