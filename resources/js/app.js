@@ -25,6 +25,7 @@ Vue.component('challenge-step', require('./components/ChallengeStepComponent.vue
 Vue.component('edit-step', require('./components/EditStepComponent.vue').default);
 Vue.component('edit-child', require('./components/EditChildComponent.vue').default);
 Vue.component('new-child', require('./components/NewChildComponent.vue').default);
+Vue.component('delete-step', require('./components/DeleteStepComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

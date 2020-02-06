@@ -176,4 +176,9 @@ class StepsController extends Controller
 
         return redirect()->action('ChildStepsController@edit', compact('id'));
     }
+
+    // 削除するステップを選択するviewを返す
+    public function choiceDelete(){
+        return view('choiceDelete');
+    }
 }

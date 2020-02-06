@@ -71,4 +71,8 @@ Route::middleware(['verified'])
         Route::get('/edit-child', 'ChildStepsController@edit')->name('editChild');
         // 子ステップ編集のリクエストを受け取る
         Route::post('/edit/update-child', 'ChildStepsController@update')->name('updateChild');
+        // 削除するステップを選択するページ
+        Route::get('/choice-delete', 'StepsController@choiceDelete')->name('choiceDelete');
+        // ステップを削除するページ
+        Route::get('/delete', 'StepsController@delete')->name('delete');
     });
