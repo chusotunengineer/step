@@ -49,8 +49,8 @@ class StepsController extends Controller
         $id = $_GET['id'];
 
         // 親ステップのIDを元に子ステップを検索し、子ステップが登録されていなければ一覧ページにリダイレクトする
-        $childStep = ChildStep::where('parent_id', $id)->first();
-        if(!$childStep){
+        $child_step = ChildStep::where('parent_id', $id)->first();
+        if(!$child_step){
             return redirect(route('index'));
             exit;
         }
@@ -180,5 +180,26 @@ class StepsController extends Controller
     // 削除するステップを選択するviewを返す
     public function choiceDelete(){
         return view('choiceDelete');
+    }
+    // GETで送られた情報をもとに該当ステップを削除する
+    public function delete(){
+      $id = $_GET['id'];
+      $user_id = Auth::id();
+
+      $step = Step::find($id);
+      // 現在ログインしているユーザーがステップの作成者かどうか判定
+      if($step->user_id != $user_id){
+        // 作成者以外なら処理をせずにマイページへリダイレクト
+        return redirect(route('mypage'));
+        exit;
+      }
+
+      // 親ステップを削除
+      Step::destroy($id);
+      // 子ステップを削除
+      childStep::where('parent_id', $id)->delete();
+
+      // マイページへリダイレクト
+      return redirect(route('mypage'));
     }
 }
