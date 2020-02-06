@@ -34,13 +34,13 @@ class ChallengeController extends Controller
         $id = $_GET['id'];
         $user_id = Auth::id();
         $step = Step::find($id);
-        $childStep = ChildStep::where('parent_id', $id)->get();
+        $child_step = ChildStep::where('parent_id', $id)->get();
         $challenge = Challenge::where('user_id', $user_id)->where('step_id', $id)->first();
 
         // 進捗がDBに保存されいればそれを、されていなければ0を変数に格納
         $progress = ($challenge['progress'] ? $challenge['progress'] : 0);
         // 親ステップの名前、子ステップの個数、進捗、子ステップ情報を配列に格納
-        $res = array('title' => $step['name'], 'num' => $step['child_num'], 'progress' => $progress, 'childStep' => $childStep);
+        $res = array('title' => $step['name'], 'num' => $step['child_num'], 'progress' => $progress, 'childStep' => $child_step);
 
         return response()->json($res);
     }
