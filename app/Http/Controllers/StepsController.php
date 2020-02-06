@@ -188,7 +188,7 @@ class StepsController extends Controller
 
       $step = Step::find($id);
       // 現在ログインしているユーザーがステップの作成者かどうか判定
-      if($step->user_id != $user_id){
+      if((int)$step['user_id'] !== $user_id){
         // 作成者以外なら処理をせずにマイページへリダイレクト
         return redirect(route('mypage'));
         exit;
