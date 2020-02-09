@@ -22,32 +22,32 @@
 
     <div class="c-form__row">
       <label for="email" class="c-form__label">メールアドレス</label>
-
-      <input id="email" type="email" class="c-form__input" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
-
-      @error('email')
-      <span>
-        <strong class="u-font--alert">{{ $message }}</strong>
-      </span>
-      @enderror
+      <div class="c-form__inputWrap">
+        <input id="email" type="email" class="c-form__input" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+        @error('email')
+        <span>
+          <strong class="u-font--alert">{{ $message }}</strong>
+        </span>
+        @enderror
+      </div>
     </div>
 
     <div class="c-form__row">
       <label for="password" class="c-form__label">新しいパスワード</label>
-
-      <input id="password" type="password" class="c-form__input" name="password" required autocomplete="new-password">
-
-      @error('password')
-      <span>
-        <strong class="u-font--alert">{{ $message }}</strong>
-      </span>
-      @enderror
+      <div class="c-form__inputWrap">
+        <input id="password" type="password" class="c-form__input" name="password" required autocomplete="new-password">
+        @error('password')
+        <span>
+          <strong class="u-font--alert">{{ $message }}</strong>
+        </span>
+        @enderror
+      </div>
     </div>
-
     <div class="c-form__row u-mb_s">
       <label for="password-confirm" class="c-form__label">パスワード：再入力</label>
-
-      <input id="password-confirm" type="password" class="c-form__input" name="password_confirmation" required autocomplete="new-password">
+      <div class="c-form__inputWrap">
+        <input id="password-confirm" type="password" class="c-form__input" name="password_confirmation" required autocomplete="new-password">
+      </div>
     </div>
 
     <button type="submit" class="c-button c-button--wide u-mx_auto">
