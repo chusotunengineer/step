@@ -44,6 +44,6 @@ class ResetPasswordController extends Controller
             'remember_token' => Str::random(60),
         ])->save();
 
-        return redirect(route('top'));
+        return redirect(route('login'));
     }
 }
