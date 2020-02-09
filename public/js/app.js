@@ -27147,8 +27147,8 @@ __webpack_require__.r(__webpack_exports__);
  // ハンバーガーメニュー
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-  var $btn = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js_toggle_btn");
-  var $nav = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js_slide_nav"); // $btnがクリックされたら.activeをつけ外しする
+  var $btn = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js-toggle_btn");
+  var $nav = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js-slide_nav"); // $btnがクリックされたら.activeをつけ外しする
 
   $btn.on("click", function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass("active");
@@ -27159,6 +27159,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
     $btn.removeClass("active");
     $nav.removeClass("active");
   });
+}); // パスワードリマインダーのメール送信時メッセージ
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  var $flash = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-fadeout'); // $flashが存在した場合、$flashを3秒表示した後に0.4秒かけて画面外へ移動させる
+
+  if ($flash[0]) {
+    setTimeout(function () {
+      $flash.css({
+        transform: 'translateY(-100%)',
+        transition: 'transform 0.4s'
+      });
+    }, 3000);
+  }
 });
 
 /***/ }),

@@ -1,0 +1,13 @@
+.c-flash {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  &__txt {
+    text-align: center;
+    color: white;
+  }
+}

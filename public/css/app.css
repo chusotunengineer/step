@@ -594,6 +594,21 @@ a:hover {
   }
 }
 
+.c-flash {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.c-flash__txt {
+  text-align: center;
+  color: white;
+}
+
 .c-hamburger {
   width: 40px;
   height: 32px;

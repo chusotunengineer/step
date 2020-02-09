@@ -4,6 +4,11 @@
 
 @section('content')
 
+@if (session('email_sent'))
+<div class="c-flash js-fadeout">
+  <p class="c-flash__txt">{{ session('email_sent') }}</p>
+</div>
+@endif
 <div class="c-bread">
   <div class="c-bread__content">
     <a href="{{ route('top') }}" class="c-bread__txt">HOME</a>
