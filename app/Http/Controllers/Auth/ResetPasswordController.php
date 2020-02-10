@@ -37,13 +37,34 @@ class ResetPasswordController extends Controller
     {
         $this->middleware('guest');
     }
-    /* ResetsPasswordsのメソッドを定義する */
+    // パスワードのバリデーションルールをオーバーライド
+    protected function rules()
+    {
+        return [
+            'token' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|confirmed|min:8'
+        ];
+    }
+    // パスワードリセットのバリデーションメッセージをオーバーライド
+    protected function validationErrorMessages()
+    {
+        return [
+            'token.required' => '不具合が発生しました。時間をおいて再度お試しください。',
+            'email.required' => 'ご登録のメールアドレスをご入力ください',
+            'email.email' => 'ご登録のメールアドレスをご入力ください',
+            'password.required'=>'メールアドレスは入力必須です',
+            'password.min' => 'パスワードは8文字以上でご入力ください',
+            'password.confirmed' => '再入力されたパスワードが一致しません'
+        ];
+    }
+    // ResetsPasswordsのメソッドを定義する
     protected function resetPassword($user, $password) {
         $user->forceFill([
             'password' => bcrypt($password),
             'remember_token' => Str::random(60),
         ])->save();
 
-        return redirect(route('login'));
+        return redirect(route('top'));
     }
 }
