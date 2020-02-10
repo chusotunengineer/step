@@ -55,7 +55,8 @@ class ResetPasswordController extends Controller
             'email.email' => 'ご登録のメールアドレスをご入力ください',
             'password.required'=>'メールアドレスは入力必須です',
             'password.min' => 'パスワードは8文字以上でご入力ください',
-            'password.confirmed' => '再入力されたパスワードが一致しません'
+            'password.confirmed' => '再入力されたパスワードが一致しません',
+            'passwords.user' => 'メールアドレスが誤っています'
         ];
     }
     // ResetsPasswordsのメソッドを定義する
