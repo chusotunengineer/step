@@ -10,8 +10,11 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
-    'max'                  => [
+    'max' => [
         'file'    => '画像は500kb以下にしてください',
+    ],
+    'passwords' => [
+      'user' => 'メールアドレスが誤っています',
     ],
     'custom' => [
         'attribute-name' => [
