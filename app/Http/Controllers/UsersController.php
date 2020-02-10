@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
 class UsersController extends Controller
@@ -100,6 +101,45 @@ class UsersController extends Controller
         $user->fill($post)->save();
 
         // 処理が終わったらマイページにリダイレクトする
+        return redirect(route('mypage'));
+    }
+
+    // パスワード変更ページのviewを返す
+    public function passEdit(){
+      return view('auth.passwords.passEdit');
+    }
+
+    // postで送られてきたパスワード変更のリクエストをもとにレコードを更新する
+    public function passChange(Request $request){
+        $id = Auth::id();
+        $user = User::find($id);
+        $password = $user->password;
+
+        $request->validate([
+            'current' => ['required'],
+            'password' => ['required', 'min:8', 'confirmed', 'different:current']
+        ],
+        [
+            'current.required' => '現在のパスワードをご入力ください',
+            'password.requried' => '新しいパスワードをご入力ください',
+            'min' => 'パスワードは8文字以上でご入力ください',
+            'confirmed' => '再入力されたパスワードが一致しません',
+            'different' => '新しいパスワードを入力してください'
+        ]);
+
+        $current = $request->get('current');
+        $new_password = $request->get('password');
+
+        // 入力された現在のパスワードが正しいかを判定
+        if(!(Hash::check($current, $password))){
+          return redirect(route('passEdit'))->with('pass_not_match', '現在のパスワードが誤っています');
+          exit;
+        }
+
+        // レコードを更新
+        $user->password = Hash::make($new_password);
+        $user->save();
+
         return redirect(route('mypage'));
     }
 

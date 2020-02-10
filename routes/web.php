@@ -39,7 +39,11 @@ Route::middleware(['verified'])
         // マイページで自分が登録したステップを表示するためのajaxリクエストを受け取る
         Route::get('/mypage/my-step', 'StepsController@myStep')->name('my-step');
         // マイページで自分が挑戦中のステップを表示するためのajaxリクエストを受け取る
-        Route::get('/mypage/challenge-step', 'ChallengeController@challengeStep')->name('challenge-step');
+        Route::get('/mypage/challenge-step', 'ChallengeController@challengeStep')->name('challengeStep');
+        // パスワード編集ページ
+        Route::get('/mypage/pass', 'UsersController@passEdit')->name('passEdit');
+        // パスワード変種のリクエストを受け取る
+        Route::post('/mypage/pass/change', 'UsersController@passChange')->name('passChange');
 
         // チャレンジページ
         Route::get('/steps/challenge', 'ChallengeController@challenge')->name('challenge');

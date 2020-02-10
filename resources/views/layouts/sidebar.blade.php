@@ -13,6 +13,9 @@
       <li class="p-sidebar__item">
         <a class="p-sidebar__txt" href="{{ route('profEdit') }}">プロフィール登録・編集</a>
       </li>
+      <li class="p-sidebar__item">
+        <a class="p-sidebar__txt" href="{{ route('passEdit') }}">パスワード変更</a>
+      </li>
     </ul>
   </nav>
 </div>
