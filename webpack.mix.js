@@ -1,6 +1,5 @@
 let mix = require('laravel-mix');
 
-require('laravel-mix-polyfill');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,13 +10,11 @@ require('laravel-mix-polyfill');
  | file for the application as well as bundling up all the JS files.
  |
  */
-module.exports = {
-  entry: ["@babel/polyfill", "./app/js"],
-};
 
 mix.js(['resources/js/app.js', 'resources/js/script_jquery.js'], 'public/js/app.js')
   .sass('resources/sass/app.scss', 'public/css')
-  .polyfill({
-    enabled: true,
-    useBuiltIns: "usage"
+  .babelConfig({
+    "plugins": [
+      ["@babel/plugin-proposal-decorators", { "legacy": true }]
+    ]
   });

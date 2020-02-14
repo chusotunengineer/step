@@ -1972,7 +1972,7 @@ __webpack_require__.r(__webpack_exports__);
         }
 
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -2039,7 +2039,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -2104,7 +2104,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     },
@@ -2186,7 +2186,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -2246,7 +2246,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -2305,7 +2305,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -2410,7 +2410,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -2498,7 +2498,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res.data);
         var result = res.data;
         _this.items = result;
-      }).catch(function (error) {
+      })["catch"](function (error) {
         return console.log(error);
       });
     }
@@ -26538,15 +26538,15 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('show-step', __webpack_require__(/*! ./components/ShowStepComponent.vue */ "./resources/js/components/ShowStepComponent.vue").default);
-Vue.component('show-child', __webpack_require__(/*! ./components/ShowChildComponent.vue */ "./resources/js/components/ShowChildComponent.vue").default);
-Vue.component('challenge', __webpack_require__(/*! ./components/ChallengeComponent.vue */ "./resources/js/components/ChallengeComponent.vue").default);
-Vue.component('my-step', __webpack_require__(/*! ./components/MyStepComponent.vue */ "./resources/js/components/MyStepComponent.vue").default);
-Vue.component('challenge-step', __webpack_require__(/*! ./components/ChallengeStepComponent.vue */ "./resources/js/components/ChallengeStepComponent.vue").default);
-Vue.component('edit-step', __webpack_require__(/*! ./components/EditStepComponent.vue */ "./resources/js/components/EditStepComponent.vue").default);
-Vue.component('edit-child', __webpack_require__(/*! ./components/EditChildComponent.vue */ "./resources/js/components/EditChildComponent.vue").default);
-Vue.component('new-child', __webpack_require__(/*! ./components/NewChildComponent.vue */ "./resources/js/components/NewChildComponent.vue").default);
-Vue.component('delete-step', __webpack_require__(/*! ./components/DeleteStepComponent.vue */ "./resources/js/components/DeleteStepComponent.vue").default);
+Vue.component('show-step', __webpack_require__(/*! ./components/ShowStepComponent.vue */ "./resources/js/components/ShowStepComponent.vue")["default"]);
+Vue.component('show-child', __webpack_require__(/*! ./components/ShowChildComponent.vue */ "./resources/js/components/ShowChildComponent.vue")["default"]);
+Vue.component('challenge', __webpack_require__(/*! ./components/ChallengeComponent.vue */ "./resources/js/components/ChallengeComponent.vue")["default"]);
+Vue.component('my-step', __webpack_require__(/*! ./components/MyStepComponent.vue */ "./resources/js/components/MyStepComponent.vue")["default"]);
+Vue.component('challenge-step', __webpack_require__(/*! ./components/ChallengeStepComponent.vue */ "./resources/js/components/ChallengeStepComponent.vue")["default"]);
+Vue.component('edit-step', __webpack_require__(/*! ./components/EditStepComponent.vue */ "./resources/js/components/EditStepComponent.vue")["default"]);
+Vue.component('edit-child', __webpack_require__(/*! ./components/EditChildComponent.vue */ "./resources/js/components/EditChildComponent.vue")["default"]);
+Vue.component('new-child', __webpack_require__(/*! ./components/NewChildComponent.vue */ "./resources/js/components/NewChildComponent.vue")["default"]);
+Vue.component('delete-step', __webpack_require__(/*! ./components/DeleteStepComponent.vue */ "./resources/js/components/DeleteStepComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
