@@ -12,9 +12,4 @@ let mix = require('laravel-mix');
  */
 
 mix.js(['resources/js/app.js', 'resources/js/script_jquery.js'], 'public/js/app.js')
-  .sass('resources/sass/app.scss', 'public/css')
-  .babelConfig({
-    "plugins": [
-      ["@babel/plugin-proposal-decorators", { "legacy": true }]
-    ]
-  });
+  .sass('resources/sass/app.scss', 'public/css');

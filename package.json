@@ -10,7 +10,8 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@babel/plugin-proposal-decorators": "^7.8.3",
+        "@babel/polyfill": "^7.8.3",
+        "@babel/preset-env": "^7.8.4",
         "axios": "^0.19",
         "cross-env": "^5.2.1",
         "jquery": "^3.2",
