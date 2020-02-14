@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
 
 require('laravel-mix-polyfill');
 /*
@@ -17,5 +17,5 @@ mix.js(['resources/js/app.js', 'resources/js/script_jquery.js'], 'public/js/app.
   .polyfill({
     enabled: true,
     useBuiltIns: "usage",
-    targets: { "firefox": "50", "ie": 11 }
+    targets: { "chrome": "58", "firefox": "50", "ie": 11 }
   });;
