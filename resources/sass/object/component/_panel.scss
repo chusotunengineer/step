@@ -13,12 +13,12 @@
   @include mq() {
     width: 100%;
     height: auto;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
   &:hover {
     text-decoration: none;
-  }
-  &:last-of-type {
-    margin-bottom: 0;
   }
   &__content {
     width: 100%;

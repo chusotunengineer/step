@@ -16,7 +16,7 @@ class StepsController extends Controller
         return view('top');
     }
 
-    // 親ステップ一覧のviewを返す
+    // 親ステップ一覧のviewとカテゴリテーブルの全レコードを返す
     public function index(){
         $category = Category::all();
         return view('index', compact('category'));

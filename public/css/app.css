@@ -697,14 +697,14 @@ a:hover {
     width: 100%;
     height: auto;
   }
+
+  .c-panel:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .c-panel:hover {
   text-decoration: none;
-}
-
-.c-panel:last-of-type {
-  margin-bottom: 0;
 }
 
 .c-panel__content {
