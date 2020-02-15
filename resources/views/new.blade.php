@@ -32,13 +32,9 @@
         <label for="category_id" class="c-form__label">カテゴリー</label>
         <div class="c-form__inputWrap">
           <select id="category_id" class="c-form__select" name="category_id">
-            <option value="1" selected>語学</option>
-            <option value="2">プログラミング</option>
-            <option value="3">デザイン</option>
-            <option value="4">創作</option>
-            <option value="5">文系資格</option>
-            <option value="6">理系資格</option>
-            <option value="7">その他</option>
+            @foreach($category as $record)
+            <option value="{{ $loop->iteration }}" @if($loop->iteration === 1) selected @endif>{{ $record['name'] }}</option>
+            @endforeach
           </select>
           @error('category_id')
           <p>

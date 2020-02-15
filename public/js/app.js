@@ -11902,10 +11902,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    categories: Array
+  },
   data: function data() {
     return {
       items: [],
@@ -24424,25 +24425,18 @@ var render = function() {
             },
             [
               _c("option", { attrs: { value: "0", selected: "" } }, [
-                _vm._v("未選択")
+                _vm._v("未指定")
               ]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "1" } }, [_vm._v("語学")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "2" } }, [
-                _vm._v("プログラミング")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "3" } }, [_vm._v("デザイン")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4" } }, [_vm._v("創作")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5" } }, [_vm._v("文系資格")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "6" } }, [_vm._v("理系資格")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "7" } }, [_vm._v("その他")])
-            ]
+              _vm._l(_vm.categories, function(record) {
+                return _c(
+                  "option",
+                  { key: record.id, domProps: { value: record.id } },
+                  [_vm._v(_vm._s(record.name))]
+                )
+              })
+            ],
+            2
           )
         ])
       ]),

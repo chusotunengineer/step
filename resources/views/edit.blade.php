@@ -33,13 +33,9 @@
         <label for="category_id" class="c-form__label">カテゴリー</label>
         <div class="c-form__inputWrap">
           <select id="category_id" class="c-form__select" name="category_id">
-            <option value="1" {{ ($step['category_id'] === 1) ? 'selected' : ''  }}>語学</option>
-            <option value="2" {{ ($step['category_id'] === 2) ? 'selected' : ''  }}>プログラミング</option>
-            <option value="3" {{ ($step['category_id'] === 3) ? 'selected' : ''  }}>デザイン</option>
-            <option value="4" {{ ($step['category_id'] === 4) ? 'selected' : ''  }}>創作</option>
-            <option value="5" {{ ($step['category_id'] === 5) ? 'selected' : ''  }}>文系資格</option>
-            <option value="6" {{ ($step['category_id'] === 6) ? 'selected' : ''  }}>理系資格</option>
-            <option value="7" {{ ($step['category_id'] === 7) ? 'selected' : ''  }}>その他</option>
+            @foreach($category as $record)
+            <option value="{{ $loop->iteration }}" @if($step['category_id']===$loop->iteration) selected @endif>{{ $record['name'] }}</option>
+            @endforeach
           </select>
           @error('category_id')
           <span>

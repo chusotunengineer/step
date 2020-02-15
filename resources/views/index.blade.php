@@ -14,7 +14,7 @@
   <h2 class="c-title">
     みんなのステップ一覧
   </h2>
-  <show-step />
+  <show-step :categories="{{ $category }}" />
 </section>
 @endsection
 @section('footer')

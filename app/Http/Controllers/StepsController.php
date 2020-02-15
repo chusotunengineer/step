@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Step;
 use App\ChildStep;
 use App\User;
+use App\Category;
 use Illuminate\Support\Facades\Auth;
 
 class StepsController extends Controller
@@ -17,7 +18,8 @@ class StepsController extends Controller
 
     // 親ステップ一覧のviewを返す
     public function index(){
-        return view('index');
+        $category = Category::all();
+        return view('index', compact('category'));
     }
 
     // 親ステップ一覧の検索結果をjsonで返す
@@ -61,9 +63,10 @@ class StepsController extends Controller
         return view('detail', compact('step', 'author'));
     }
 
-    // 親ステップ作成ページのviewを返す
+    // 親ステップ作成ページのviewとカテゴリテーブルの全レコードを返す
     public function new(){
-        return view('new');
+        $category = Category::all();
+        return view('new', compact('category'));
     }
 
     // 自分の登録した親ステップをjsonで返す
@@ -124,18 +127,19 @@ class StepsController extends Controller
         return view('choice');
     }
 
-    // 親ステップ編集用のviewを返す
+    // 親ステップ編集用のviewとカテゴリーテーブルの全レコードを返す
     public function edit(){
         $id = $_GET['id'];
         $user_id = Auth::id();
         $step = Step::find($id);
+        $category = Category::all();
 
         // GETで取得した親ステップのレコードに保存された作成者IDと、現在ログインしているユーザーのIDが違った場合はマイページにリダイレクトする
         if((int)$step['user_id'] !== $user_id){
             return redirect(route('mypage'));
             exit;
         }
-        return view('edit', compact('step', 'id'));
+        return view('edit', compact('step', 'id', 'category'));
     }
 
     // postで送られてきた親ステップの変更リクエストをもとにレコードを更新する
