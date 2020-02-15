@@ -24385,7 +24385,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "p-index" }, [
     _c("div", { staticClass: "p-index__search" }, [
-      _c("div", { staticClass: "c-form__row u-margin_bottom--ls" }, [
+      _c("div", { staticClass: "c-form__row u-margin_bottom--s" }, [
         _c(
           "label",
           { staticClass: "c-form__label", attrs: { for: "category_id" } },

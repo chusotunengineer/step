@@ -1,7 +1,7 @@
 <template>
   <div class="p-index">
     <div class="p-index__search">
-      <div class="c-form__row u-margin_bottom--ls">
+      <div class="c-form__row u-margin_bottom--s">
         <label for="category_id" class="c-form__label">カテゴリー</label>
         <div class="c-form__inputWrap">
           <select id="category_id" class="c-form__select" name="category_id" v-model="category">

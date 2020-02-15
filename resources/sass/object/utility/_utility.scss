@@ -54,58 +54,61 @@
   }
 }
 
-// PCサイズのみ表示したい場合に使用
-.u-none__pc {
-  &--xl {
-    display: none;
-    @include mq(xl) {
+// ディスプレイサイズによって要素の表示・非表示を切り替える
+.u-none {
+  // PCサイズのみ表示したい場合に使用
+  &__mobile {
+    &--xl {
       display: block;
+      @include mq(xl) {
+        display: none;
+      }
+    }
+    &--lg {
+      display: block;
+      @include mq(lg) {
+        display: none;
+      }
+    }
+    &--md {
+      display: block;
+      @include mq() {
+        display: none;
+      }
+    }
+    &--sm {
+      display: block;
+      @include mq(sm) {
+        display: none;
+      }
     }
   }
-  &--lg {
-    display: none;
-    @include mq(lg) {
-      display: block;
-    }
-  }
-  &--md {
-    display: none;
-    @include mq() {
-      display: block;
-    }
-  }
-  &--sm {
-    display: none;
-    @include mq(sm) {
-      display: block;
-    }
-  }
-}
 
-// スマホ・タブレットサイズのみ表示したい場合に使用
-.u-none__mobile {
-  &--xl {
-    display: block;
-    @include mq(xl) {
+  // スマホ・タブレットサイズのみ表示したい場合に使用
+  &__pc {
+    &--xl {
       display: none;
+      @include mq(xl) {
+        display: block;
+      }
     }
-  }
-  &--lg {
-    display: block;
-    @include mq(lg) {
+    &--lg {
       display: none;
+      @include mq(lg) {
+        display: block;
+      }
     }
-  }
-  &--md {
-    display: block;
-    @include mq() {
+    &--md {
       display: none;
+      @include mq() {
+        display: block;
+      }
     }
-  }
-  &--sm {
-    display: block;
-    @include mq(sm) {
+    &--sm {
       display: none;
+      @include mq(sm) {
+        display: block;
+      }
     }
   }
 }

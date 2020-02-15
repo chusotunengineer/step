@@ -10,7 +10,6 @@
   margin-bottom: $margin-m;
   padding: 20px;
   width: calc(50% - 10px);
-  height: 500px;
   @include mq() {
     width: 100%;
     height: auto;
@@ -22,7 +21,6 @@
     margin-bottom: 0;
   }
   &__content {
-    height: 250px;
     width: 100%;
     overflow: hidden;
   }
@@ -48,6 +46,8 @@
   &__txt {
     font-size: $font-s;
     font-weight: normal;
+    line-height: 1.5;
+    height: 120px;
   }
   &__badge {
     font-weight: bold;
