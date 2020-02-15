@@ -13,7 +13,6 @@
     @include mq() {
       width: 100%;
       padding: 20px 0;
-      text-decoration: none;
     }
     &::after {
       content: "";
@@ -26,6 +25,9 @@
       background: $twitter_color;
       transform: translateX(0);
       transition: transform 0.4s;
+    }
+    &:hover {
+      text-decoration: none;
     }
     &:hover::after {
       transform: translateX(500px);

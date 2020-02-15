@@ -832,7 +832,6 @@ a:hover {
   .c-share__button {
     width: 100%;
     padding: 20px 0;
-    text-decoration: none;
   }
 }
 
@@ -847,6 +846,10 @@ a:hover {
   background: #1da1f2;
   transform: translateX(0);
   transition: transform 0.4s;
+}
+
+.c-share__button:hover {
+  text-decoration: none;
 }
 
 .c-share__button:hover::after {
