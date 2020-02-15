@@ -20,11 +20,11 @@
     メールアドレスの確認
   </h2>
   <div class="p-verify">
-    <p class="p-verify__txt u-mb_s">
+    <p class="p-verify__txt u-margin_bottom--l">
       ご入力いただいたメールアドレスに送信されたSTEPからのメールをご確認ください。<br>
       もし届いていない場合はメールアドレスを間違って入力されたか、迷惑メールとして分類されている可能性があります。<br>
     </p>
-    <a class="c-button c-button--wide u-mx_auto" href="{{ route('verification.resend') }}">メールを再送信する</a>
+    <a class="c-button c-button--wide u-margin_auto" href="{{ route('verification.resend') }}">メールを再送信する</a>
   </div>
 </section>
 

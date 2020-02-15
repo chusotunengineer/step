@@ -2,7 +2,7 @@
   <div>
     <div v-if="items.length" class="p-detail__child">
       <div class="p-detail__child__contentWrap" v-for="item in items" :key="item.id">
-        <span class="p-detail__child__order u-weight_bold">ステップ{{item.order}}</span>
+        <span class="p-detail__child__order u-weight--bold">ステップ{{item.order}}</span>
         <span class="p-detail__child__title">{{item.name}}</span>
       </div>
     </div>

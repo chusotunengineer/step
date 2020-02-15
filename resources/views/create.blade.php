@@ -40,7 +40,7 @@
           @enderror
         </div>
       </div>
-      <div class="c-form__row u-mb_s">
+      <div class="c-form__row u-margin_bottom--l">
         <label for="image" class="c-form__label">イメージ画像</label>
         <div class="c-form__inputWrap">
           <input id="image" type="file" class="c-form__input" name="image">
@@ -51,7 +51,7 @@
           @enderror
         </div>
       </div>
-      <button type="submit" class="c-button c-button--wide u-mx_auto">
+      <button type="submit" class="c-button c-button--wide u-margin_auto">
         登録
       </button>
     </form>

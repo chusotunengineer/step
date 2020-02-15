@@ -50,10 +50,10 @@
           @enderror
         </div>
       </div>
-      <div class="c-form__row u-mb_s">
+      <div class="c-form__row u-margin_bottom--l">
         <label for="icon" class="c-form__label">現在のアイコン</label>
         <div class="c-form__inputWrap">
-          <input id="icon" type="file" class="c-form__input u-mb_xs" name="icon" accept="image/*">
+          <input id="icon" type="file" class="c-form__input u-margin_bottom--m" name="icon" accept="image/*">
           @error('icon')
           <span>
             <strong class="u-font--alert">{{ $message }}</strong>
@@ -63,7 +63,7 @@
           <img class="c-form__previewImg" src="{{ empty($user['icon']) ? asset('img/no_image.png') : asset($user['icon']) }}" alt="">
         </div>
       </div>
-      <button type="submit" class="c-button c-button--wide u-mx_auto">
+      <button type="submit" class="c-button c-button--wide u-margin_auto">
         保存
       </button>
     </form>

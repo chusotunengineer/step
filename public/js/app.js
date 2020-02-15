@@ -23784,7 +23784,8 @@ var render = function() {
         ? _c(
             "a",
             {
-              staticClass: "c-button c-button--wide u-mx_right u-mt_s",
+              staticClass:
+                "c-button c-button--wide u-margin_auto u-margin_auto--right u-margin_top--l",
               attrs: { href: "challenge/reset?id=" + _vm.parent_id }
             },
             [_vm._v("進捗をリセット")]
@@ -23792,7 +23793,8 @@ var render = function() {
         : _c(
             "a",
             {
-              staticClass: "c-button c-button--wide u-mx_right u-mt_s",
+              staticClass:
+                "c-button c-button--wide u-margin_auto u-margin_auto--right u-margin_top--l",
               attrs: {
                 href:
                   "challenge/clear?id=" +
@@ -23830,7 +23832,7 @@ var render = function() {
             [
               _c(
                 "span",
-                { staticClass: "p-detail__child__order u-weight_bold" },
+                { staticClass: "p-detail__child__order u-weight--bold" },
                 [_vm._v("ステップ" + _vm._s(item.order))]
               ),
               _vm._v(" "),
@@ -23876,7 +23878,7 @@ var render = function() {
         ])
       : _c(
           "div",
-          { staticClass: "u-d_flex" },
+          { staticClass: "u-display--flex" },
           _vm._l(_vm.items.steps, function(step, i) {
             return _c(
               "a",
@@ -23948,7 +23950,7 @@ var render = function() {
     _vm.items.length
       ? _c(
           "div",
-          { staticClass: "u-d_flex" },
+          { staticClass: "u-display--flex" },
           _vm._l(_vm.items, function(item) {
             return _c(
               "div",
@@ -24077,7 +24079,7 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "c-button c-button--wide u-mx_auto u-mt_s",
+          staticClass: "c-button c-button--wide u-margin_auto u-margin_top--l",
           attrs: { type: "submit" }
         },
         [_vm._v("保存")]
@@ -24112,7 +24114,7 @@ var render = function() {
     _vm.items.length
       ? _c(
           "div",
-          { staticClass: "u-d_flex" },
+          { staticClass: "u-display--flex" },
           _vm._l(_vm.items, function(item) {
             return _c(
               "a",
@@ -24178,7 +24180,7 @@ var render = function() {
     _vm.items.length
       ? _c(
           "div",
-          { staticClass: "u-d_flex" },
+          { staticClass: "u-display--flex" },
           _vm._l(_vm.items, function(item) {
             return _c(
               "a",
@@ -24288,7 +24290,7 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "c-button c-button--wide u-mx_auto u-mt_s",
+          staticClass: "c-button c-button--wide u-margin_auto u-margin_top--l",
           on: { click: _vm.add }
         },
         [_vm._v("追加")]
@@ -24297,7 +24299,7 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "c-button c-button--wide u-mx_auto u-mt_s",
+          staticClass: "c-button c-button--wide u-margin_auto u-margin_top--l",
           attrs: { type: "submit" }
         },
         [_vm._v("登録")]
@@ -24340,7 +24342,7 @@ var render = function() {
               [
                 _c(
                   "span",
-                  { staticClass: "p-detail__child__order u-weight_bold" },
+                  { staticClass: "p-detail__child__order u-weight--bold" },
                   [_vm._v("ステップ" + _vm._s(item.order))]
                 ),
                 _vm._v(" "),
@@ -24383,7 +24385,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "p-index" }, [
     _c("div", { staticClass: "p-index__search" }, [
-      _c("div", { staticClass: "c-form__row u-pt_0" }, [
+      _c("div", { staticClass: "c-form__row u-margin_bottom--ls" }, [
         _c(
           "label",
           { staticClass: "c-form__label", attrs: { for: "category_id" } },
@@ -24445,7 +24447,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "c-form__row u-mb_s" }, [
+      _c("div", { staticClass: "c-form__row u-margin_bottom--l" }, [
         _c(
           "label",
           { staticClass: "c-form__label", attrs: { for: "category_id" } },
@@ -24496,7 +24498,7 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "c-button u-mx_auto",
+          staticClass: "c-button u-margin_auto",
           attrs: { type: "submit" },
           on: { click: _vm.request }
         },

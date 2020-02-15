@@ -22,7 +22,7 @@
   </h2>
   <form method="POST" action="{{ route('password.email') }}">
     @csrf
-    <div class="c-form__row u-mb_s">
+    <div class="c-form__row u-margin_bottom--l">
       <label for="email" class="c-form__label">メールアドレス</label>
       <div class="c-form__inputWrap">
         <input id="email" type="email" class="c-form__input" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -33,7 +33,7 @@
         @enderror
       </div>
     </div>
-    <button type="submit" class="c-button c-button--wide u-mx_auto">
+    <button type="submit" class="c-button c-button--wide u-margin_auto">
       パスワード再設定用のメールを送信
     </button>
   </form>

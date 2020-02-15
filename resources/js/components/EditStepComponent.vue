@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="items.length" class="u-d_flex">
+    <div v-if="items.length" class="u-display--flex">
       <a class="c-panel" v-for="item in items" :key="item.id" :href="'edit?id=' + item.id">
         <div class="c-panel__imgWrap">
           <img :src="item.image" alt="step_image" class="c-panel__img" />

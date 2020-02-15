@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="items.length" class="u-d_flex">
+    <div v-if="items.length" class="u-display--flex">
       <div
         class="c-panel"
         v-for="item in items"

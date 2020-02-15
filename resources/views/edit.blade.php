@@ -70,10 +70,10 @@
           @enderror
         </div>
       </div>
-      <div class="c-form__row u-mb_s">
+      <div class="c-form__row u-margin_bottom--l">
         <label for="image" class="c-form__label">イメージ画像</label>
         <div class="c-form__inputWrap">
-          <input id="image" type="file" class="c-form__input u-mb_xs" name="image" accept="image/*">
+          <input id="image" type="file" class="c-form__input u-margin_bottom--m" name="image" accept="image/*">
           @error('image')
           <span>
             <strong class="u-font--alert">{{ $message }}</strong>
@@ -83,7 +83,7 @@
           <img class="c-form__previewImg" src="{{ empty($step['image']) ? asset('img/no_image.png') : $step['image'] }}" alt="">
         </div>
       </div>
-      <button type="submit" class="c-button c-button--wide u-mx_auto">
+      <button type="submit" class="c-button c-button--wide u-margin_auto">
         保存
       </button>
     </form>

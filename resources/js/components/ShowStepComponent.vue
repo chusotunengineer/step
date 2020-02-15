@@ -1,7 +1,7 @@
 <template>
   <div class="p-index">
     <div class="p-index__search">
-      <div class="c-form__row u-pt_0">
+      <div class="c-form__row u-margin_bottom--ls">
         <label for="category_id" class="c-form__label">カテゴリー</label>
         <div class="c-form__inputWrap">
           <select id="category_id" class="c-form__select" name="category_id" v-model="category">
@@ -16,7 +16,7 @@
           </select>
         </div>
       </div>
-      <div class="c-form__row u-mb_s">
+      <div class="c-form__row u-margin_bottom--l">
         <label for="category_id" class="c-form__label">表示順</label>
         <div class="c-form__inputWrap">
           <select id="category_id" class="c-form__select" name="category_id" v-model="order">
@@ -25,7 +25,7 @@
           </select>
         </div>
       </div>
-      <button @click="request" type="submit" class="c-button u-mx_auto">検索</button>
+      <button @click="request" type="submit" class="c-button u-margin_auto">検索</button>
     </div>
     <div v-if="items.length !== 0 || !Array.isArray(items)" class="p-index__content">
       <a class="c-panel" v-for="item in items" :key="item.id" :href="'steps/?id=' + item.id">

@@ -30,38 +30,38 @@
       <div class="l-header__nav">
         <nav class="p-nav">
           <ul class="p-nav__list">
-            <li class="p-nav__item u-none__mobile">
+            <li class="p-nav__item u-none__mobile--xl">
               <a href="{{ route('index') }}">みんなのステップを見る</a>
             </li>
             @auth
-            <li class="p-nav__item u-none__mobile">
+            <li class="p-nav__item u-none__mobile--xl">
               <a href="{{ route('logout') }}">ログアウト</a>
             </li>
-            <li class="p-nav__item u-none__mobile">
+            <li class="p-nav__item u-none__mobile--xl">
               <button class="c-button c-button--default" onclick="location.href='{{ route('mypage') }}'">
                 マイページ
               </button>
             </li>
             @endauth
             @if(auth()->guest())
-            <li class="p-nav__item u-none__mobile">
+            <li class="p-nav__item u-none__mobile--xl">
               <a href="{{ route('login') }}">ログイン</a>
             </li>
-            <li class="p-nav__item u-none__mobile">
+            <li class="p-nav__item u-none__mobile--xl">
               <button class="c-button c-button--default" onclick="location.href='{{ route('register') }}'">
                 無料会員登録
               </button>
             </li>
             @endif
             <li>
-              <div class="js-toggle_btn c-hamburger u-none__pc">
+              <div class="js-toggle_btn c-hamburger u-none__pc--xl">
                 <span class="c-hamburger__line"></span>
                 <span class="c-hamburger__line"></span>
                 <span class="c-hamburger__line"></span>
               </div>
             </li>
           </ul>
-          <ul class="js-slide_nav c-hamburger__nav u-none__pc">
+          <ul class="js-slide_nav c-hamburger__nav u-none__pc--xl">
             @auth
             <li class="p-nav__item">
               <a href="{{ route('logout') }}">ログアウト</a>

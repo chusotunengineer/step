@@ -31,19 +31,19 @@
     </div>
     <div class="p-detail__author">
       <div class="p-detail__authorIcon">
-        <span class="p-detail__authorName u-weight_bold">{{ $author['name'] }}</span>
+        <span class="p-detail__authorName u-weight--bold">{{ $author['name'] }}</span>
         <div class="p-detail__authorIcon__imgWrap">
           <img class="p-detail__authorIcon__img" src="{{ empty($author['icon']) ? asset('img/no_image.png') : asset($author['icon']) }}" alt="author_icon">
         </div>
       </div>
       <div class="p-detail__authorIntro">
-        <span class="u-weight_bold">プロフィール</span>
+        <span class="u-weight--bold">プロフィール</span>
         <p class="p-detail__authorIntro__txt">
           {{ empty($author['intro']) ? '未記入' : $author['intro'] }}
         </p>
       </div>
     </div>
-    <a href="steps/challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-mx_auto">
+    <a href="steps/challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-margin_auto">
       チャレンジ！
     </a>
     <div class="c-share">

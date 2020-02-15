@@ -27,7 +27,7 @@
         @enderror
       </div>
     </div>
-    <div class="c-form__row u-mb_s">
+    <div class="c-form__row u-margin_bottom--l">
       <label for="password" class="c-form__label">パスワード</label>
       <div class="c-form__inputWrap">
         <input id="password" type="password" class="c-form__input" name="password" required autocomplete="new-password">
@@ -51,7 +51,7 @@
         自動でログイン
       </label>
     </div>
-    <button type="submit" class="c-button c-button--wide u-mx_auto">
+    <button type="submit" class="c-button c-button--wide u-margin_auto">
       ログイン
     </button>
   </form>

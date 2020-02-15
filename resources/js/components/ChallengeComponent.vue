@@ -9,12 +9,12 @@
       <a
         v-if="items.num === items.progress"
         :href="'challenge/reset?id=' + parent_id"
-        class="c-button c-button--wide u-mx_right u-mt_s"
+        class="c-button c-button--wide u-margin_auto u-margin_auto--right u-margin_top--l"
       >進捗をリセット</a>
       <a
         v-else
         :href="'challenge/clear?id=' + parent_id + '&progress=' + current"
-        class="c-button c-button--wide u-mx_right u-mt_s"
+        class="c-button c-button--wide u-margin_auto u-margin_auto--right u-margin_top--l"
       >クリア！</a>
     </div>
     <div class="p-challenge__sidebar">
@@ -26,7 +26,7 @@
           v-for="item in items.childStep"
           :key="item.id"
         >
-          <span class="p-detail__child__order u-weight_bold">ステップ{{item.order}}</span>
+          <span class="p-detail__child__order u-weight--bold">ステップ{{item.order}}</span>
           <span class="p-detail__child__title">{{item.name}}</span>
         </a>
       </div>

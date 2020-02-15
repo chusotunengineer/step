@@ -6,7 +6,7 @@
 <div class="p-hero">
   <div class="p-hero__copyWrap">
     <span class="p-hero__copy">
-      WE HAVE A <span class="p-hero__copy--accent"><br class="u-none__pc">DREAM</span> TODAY!
+      WE HAVE A <span class="p-hero__copy--accent"><br class="u-none__pc--xl">DREAM</span> TODAY!
     </span>
     <span class="p-hero__copy p-hero__copy--small">
       あなたの挑戦を誰かと共に

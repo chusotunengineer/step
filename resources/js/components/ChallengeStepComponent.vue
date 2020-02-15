@@ -3,7 +3,7 @@
     <div v-if="items.steps == 0">
       <p class="p-mypage__txt">挑戦中のステップはありません。</p>
     </div>
-    <div v-else class="u-d_flex">
+    <div v-else class="u-display--flex">
       <a
         class="c-panel"
         v-for="(step, i) in items.steps"

@@ -43,14 +43,14 @@
         @enderror
       </div>
     </div>
-    <div class="c-form__row u-mb_s">
+    <div class="c-form__row u-margin_bottom--l">
       <label for="password-confirm" class="c-form__label">パスワード：再入力</label>
       <div class="c-form__inputWrap">
         <input id="password-confirm" type="password" class="c-form__input" name="password_confirmation" required autocomplete="new-password">
       </div>
     </div>
 
-    <button type="submit" class="c-button c-button--wide u-mx_auto">
+    <button type="submit" class="c-button c-button--wide u-margin_auto">
       確定
     </button>
   </form>

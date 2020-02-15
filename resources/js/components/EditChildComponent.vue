@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="c-button c-button--wide u-mx_auto u-mt_s">保存</button>
+    <button type="submit" class="c-button c-button--wide u-margin_auto u-margin_top--l">保存</button>
   </div>
 </template>
 
