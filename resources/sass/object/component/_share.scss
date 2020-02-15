@@ -1,15 +1,55 @@
 .c-share {
-  &__imgWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: $twitter_color;
+  display: flex;
+  justify-content: center;
+  &__button {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    background: transparent;
     text-align: center;
+    padding: 20px 80px;
+    border: 2px solid $twitter_color;
+    overflow: hidden;
+    @include mq() {
+      width: 100%;
+      padding: 20px 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $twitter_color;
+      transform: translateX(0);
+      transition: transform 0.4s;
+    }
+    &:hover::after {
+      transform: translateX(500px);
+      transition: transform 0.6s;
+    }
+    &:hover > .c-share__img {
+      transform: translate(500px, -50%);
+      transition: transform 0.4s;
+    }
+    &:hover > .c-share__txt {
+      color: $twitter_color;
+      transition: color 0.4s;
+    }
   }
   &__img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
     width: 30px;
+    transition: transform 0.6s;
+  }
+  &__txt {
+    display: inline-block;
+    color: $white;
+    transition: color 0.4s;
   }
 }

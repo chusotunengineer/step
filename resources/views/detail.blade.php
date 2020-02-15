@@ -43,13 +43,18 @@
         </p>
       </div>
     </div>
-    <a href="steps/challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-margin_auto">
+    <a href="steps/challenge?id={{ $step['id'] }}" class="c-button c-button--wide u-margin_auto u-margin_bottom--xl">
       チャレンジ！
     </a>
     <div class="c-share">
-      <p class="c-share__txt">このステップをTwitterでシェアしよう！</p>
-      <a href="http://twitter.com/share?text=挑戦を共有するサービス『STEP』で、「{{ $step['name'] }}」に挑戦しよう！&url=http://step-webukatu.sakura.ne.jp/step/public/steps%3fid%3D{{ $step['id'] }}&hashtags=step,挑戦" rel="nofollow" target="_blank" class="c-share__imgWrap">
+      <a href="http://twitter.com/share?text=挑戦を共有するサービス【STEP】で、『{{ $step['name'] }}』に挑戦しよう！&url=http://step-webukatu.sakuraweb.com/steps%3fid%3D{{ $step['id'] }}&hashtags=step,挑戦" rel="nofollow" target="_blank" class="c-share__button">
         <img src="{{ asset('img/logo__twitter@4x.png') }}" alt="twitter" class="c-share__img">
+        <span class="c-share__txt u-none__mobile--sm">
+          このステップをTwitterでシェアしよう！
+        </span>
+        <span class="c-share__txt u-none__pc--sm">
+          Twitterでシェア！
+        </span>
       </a>
     </div>
   </div>
