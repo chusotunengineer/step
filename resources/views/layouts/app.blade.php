@@ -9,6 +9,7 @@
   <!-- TDK -->
   <title>STEP | @yield('title', 'STEP')</title>
   <meta name="description" content="@yield('description', 'STEPは夢に挑戦する手順を共有するサービスです。なりたい自分を持つ全ての人が今すぐ行動できるように、夢に挑む人が同じ夢を抱いた誰かのために挑戦の軌跡を残せるように、そんな思いから生まれました。明日を変えるのは今日のあなたです。挑戦しましょう。')">
+  <meta name="keywords" content="STEP ステップ 共有 挑戦 夢" />
 
   <!-- OGP -->
   <meta property="og:url" content="{{ \Request::fullUrl() }}">
