@@ -78,32 +78,32 @@
           </ul>
           <ul class="js-slide_nav c-hamburger__nav u-none__pc--xl">
             @auth
-            <li class="p-nav__item">
-              <a href="{{ route('logout') }}">ログアウト</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('logout') }}">ログアウト</a>
             </li>
-            <li class="p-nav__item">
-              <a class="p-sidebar__txt" href="{{ route('mypage') }}">マイページ</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('mypage') }}">マイページ</a>
             </li>
-            <li class="p-sidebar__item">
-              <a class="p-sidebar__txt" href="{{ route('new') }}">ステップ登録</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('new') }}">ステップ登録</a>
             </li>
-            <li class="p-sidebar__item">
-              <a class="p-sidebar__txt" href="{{ route('choice') }}">ステップ編集</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('choice') }}">ステップ編集</a>
             </li>
-            <li class="p-sidebar__item">
-              <a class="p-sidebar__txt" href="{{ route('profEdit') }}">プロフィール登録・編集</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('profEdit') }}">プロフィール登録・編集</a>
             </li>
             @endauth
             @if(auth()->guest())
-            <li class="p-nav__item">
-              <a href="{{ route('login') }}">ログイン</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('login') }}">ログイン</a>
             </li>
-            <li class="p-nav__item">
-              <a class="p-sidebar__txt" href="{{ route('register') }}">無料会員登録</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('register') }}">無料会員登録</a>
             </li>
             @endif
-            <li class="p-nav__item">
-              <a href="{{ route('index') }}">みんなのステップを見る</a>
+            <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('index') }}">みんなのステップを見る</a>
             </li>
           </ul>
         </nav>

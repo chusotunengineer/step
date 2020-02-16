@@ -19,9 +19,9 @@
       @csrf
       <input type="hidden" name="parent_id" value="{{ $id }}">
       @error('name')
-      <span v-if="" class="u-color--red">
+      <p v-if="" class="u-color--red">
         <strong>{{ $message }}</strong>
-      </span>
+      </p>
       @enderror
       <new-child />
     </form>

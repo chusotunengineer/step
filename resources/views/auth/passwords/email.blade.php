@@ -27,9 +27,9 @@
       <div class="c-form__inputWrap">
         <input id="email" type="email" class="c-form__input" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
         @error('email')
-        <span>
+        <p>
           <strong class="u-font--alert">{{ $message }}</strong>
-        </span>
+        </p>
         @enderror
       </div>
     </div>

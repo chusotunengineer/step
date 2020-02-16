@@ -37,7 +37,6 @@
     }
   }
   &__nav {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -50,24 +49,21 @@
     transform: translateX(450px);
     opacity: 0;
     transition: all 0.8s;
-    @include mq(xl) {
-      display: block;
-    }
     @include mq(sm) {
       width: 100%;
       transform: translateX(100%);
-    }
-    li {
-      padding: 16px 0 16px 14px;
-      border-bottom: 1px solid $white;
-    }
-    a {
-      color: $white;
     }
     &.active {
       transition: all 0.8s;
       transform: translateX(0);
       opacity: 1;
     }
+  }
+  &__item {
+    padding: 16px 0 16px 14px;
+    border-bottom: 1px solid $white;
+  }
+  &__txt {
+    color: $white;
   }
 }

@@ -641,7 +641,6 @@ a:hover {
 }
 
 .c-hamburger__nav {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -656,12 +655,6 @@ a:hover {
   transition: all 0.8s;
 }
 
-@media screen and (max-width: 1200px) {
-  .c-hamburger__nav {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 520px) {
   .c-hamburger__nav {
     width: 100%;
@@ -669,19 +662,19 @@ a:hover {
   }
 }
 
-.c-hamburger__nav li {
-  padding: 16px 0 16px 14px;
-  border-bottom: 1px solid #fff;
-}
-
-.c-hamburger__nav a {
-  color: #fff;
-}
-
 .c-hamburger__nav.active {
   transition: all 0.8s;
   transform: translateX(0);
   opacity: 1;
+}
+
+.c-hamburger__item {
+  padding: 16px 0 16px 14px;
+  border-bottom: 1px solid #fff;
+}
+
+.c-hamburger__txt {
+  color: #fff;
 }
 
 .c-panel {

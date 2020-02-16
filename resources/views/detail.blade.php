@@ -37,13 +37,13 @@
     </div>
     <div class="p-detail__author">
       <div class="p-detail__authorIcon">
-        <span class="p-detail__authorName u-weight--bold">{{ $author['name'] }}</span>
+        <p class="p-detail__authorName u-weight--bold">{{ $author['name'] }}</p>
         <div class="p-detail__authorIcon__imgWrap">
           <img class="p-detail__authorIcon__img" src="{{ empty($author['icon']) ? asset('img/no_image.png') : asset($author['icon']) }}" alt="author_icon">
         </div>
       </div>
       <div class="p-detail__authorIntro">
-        <span class="u-weight--bold">プロフィール</span>
+        <p class="u-weight--bold">プロフィール</p>
         <p class="p-detail__authorIntro__txt">
           {{ empty($author['intro']) ? '未記入' : $author['intro'] }}
         </p>
@@ -55,12 +55,12 @@
     <div class="c-share">
       <a href="http://twitter.com/share?text=挑戦を共有するサービス【STEP】で、『{{ $step['name'] }}』に挑戦しよう！&url=http://step-webukatu.sakuraweb.com/steps%3fid%3D{{ $step['id'] }}&hashtags=step,挑戦" rel="nofollow" target="_blank" class="c-share__button">
         <img src="{{ asset('img/logo__twitter@4x.png') }}" alt="twitter" class="c-share__img">
-        <span class="c-share__txt u-none__mobile--sm">
+        <p class="c-share__txt u-none__mobile--sm">
           このステップをTwitterでシェアしよう！
-        </span>
-        <span class="c-share__txt u-none__pc--sm">
+        </p>
+        <p class="c-share__txt u-none__pc--sm">
           Twitterでシェア！
-        </span>
+        </p>
       </a>
     </div>
   </div>
