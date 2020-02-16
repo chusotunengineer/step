@@ -4,10 +4,6 @@
   position: relative;
   z-index: 4;
   cursor: pointer;
-  display: none;
-  @include mq(xl) {
-    display: block;
-  }
   &.active {
     padding-left: 10px;
     .c-hamburger__line {
@@ -41,7 +37,6 @@
     }
   }
   &__nav {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -54,9 +49,6 @@
     transform: translateX(450px);
     opacity: 0;
     transition: all 0.8s;
-    @include mq(xl) {
-      display: block;
-    }
     @include mq(sm) {
       width: 100%;
       transform: translateX(100%);
@@ -70,16 +62,8 @@
   &__item {
     padding: 16px 0 16px 14px;
     border-bottom: 1px solid $white;
-    display: none;
-    @include mq(xl) {
-      display: block;
-    }
   }
   &__txt {
     color: $white;
-    display: none;
-    @include mq(xl) {
-      display: block;
-    }
   }
 }
