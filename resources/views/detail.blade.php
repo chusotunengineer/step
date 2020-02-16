@@ -6,7 +6,7 @@
 @section('og_title', $step['name'].' - STEP')
 @section('og_type', 'article')
 @section('og_description', $step['content'])
-@section('og_img', $step['image'])
+@section('og_img', asset($step['image']))
 
 @section('content')
 <div class="c-bread">
