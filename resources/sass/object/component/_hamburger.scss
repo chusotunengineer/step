@@ -77,5 +77,8 @@
   }
   &__txt {
     color: $white;
+    @include mq(xl) {
+      display: block;
+    }
   }
 }
