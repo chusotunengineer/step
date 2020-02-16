@@ -3,11 +3,7 @@
 @section('title', 'トップ')
 
 @section('ogp')
-<meta property="og:url" content="http://step-webukatu.sakuraweb.com/" />
-<meta property="og:title" content="STEP" />
-<meta property="og:type" content="website">
-<meta property="og:description" content="あなたの人生のSTEPを共有しよう！挑戦を共有するサービス『STEP』" />
-<meta property="og:image" content="{{ asset('img/twitter_card.png') }}" />
+
 @endsection
 
 @section('content')

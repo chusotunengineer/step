@@ -11,11 +11,17 @@
   <meta name="description" content="@yield('description', 'STEPは夢に挑戦する手順を共有するサービスです。なりたい自分を持つ全ての人が今すぐ行動できるように、夢に挑む人が同じ夢を抱いた誰かのために挑戦の軌跡を残せるように、そんな思いから生まれました。明日を変えるのは今日のあなたです。挑戦しましょう。')">
 
   <!-- OGP -->
+  <meta property="og:url" content="{{ \Request::fullUrl() }}" />
+  @yield('ogp','
+  <meta property="og:title" content="STEP" />
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="あなたの人生のSTEPを共有しよう！挑戦を共有するサービス『STEP』" />
+  <meta property="og:image" content="{{ asset('img/twitter_card.png') }}" />
+  ')
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="Chusotuengineer" />
   <meta property="og:site_name" content="STEP" />
   <meta property="og:locale" content="ja_JP" />
-  @yield('ogp')
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Raleway&display=swap" rel="stylesheet">
