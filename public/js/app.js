@@ -24342,7 +24342,7 @@ var render = function() {
               { key: item.id, staticClass: "p-detail__child__contentWrap" },
               [
                 _c(
-                  "p",
+                  "h3",
                   { staticClass: "p-detail__child__order u-weight--bold" },
                   [_vm._v("ステップ" + _vm._s(item.order))]
                 ),

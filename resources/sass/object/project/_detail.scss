@@ -34,10 +34,6 @@
       padding: 10px 20px;
       margin-bottom: $margin-m;
       border-radius: 4px;
-      &:hover {
-        text-decoration: none;
-        box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.125);
-      }
     }
     &__title {
       display: block;

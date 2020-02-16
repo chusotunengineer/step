@@ -1006,11 +1006,6 @@ a:hover {
   border-radius: 4px;
 }
 
-.p-detail__child__contentWrap:hover {
-  text-decoration: none;
-  box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.125);
-}
-
 .p-detail__child__title {
   display: block;
   width: 100%;
