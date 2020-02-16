@@ -598,6 +598,13 @@ a:hover {
   position: relative;
   z-index: 4;
   cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .c-hamburger {
+    display: block;
+  }
 }
 
 .c-hamburger.active {
@@ -641,6 +648,7 @@ a:hover {
 }
 
 .c-hamburger__nav {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -653,6 +661,12 @@ a:hover {
   transform: translateX(450px);
   opacity: 0;
   transition: all 0.8s;
+}
+
+@media screen and (max-width: 1200px) {
+  .c-hamburger__nav {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 520px) {

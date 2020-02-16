@@ -69,14 +69,14 @@
             </li>
             @endif
             <li>
-              <div class="js-toggle_btn c-hamburger u-none__pc--xl">
+              <div class="js-toggle_btn c-hamburger">
                 <span class="c-hamburger__line"></span>
                 <span class="c-hamburger__line"></span>
                 <span class="c-hamburger__line"></span>
               </div>
             </li>
           </ul>
-          <ul class="js-slide_nav c-hamburger__nav u-none__pc--xl">
+          <ul class="js-slide_nav c-hamburger__nav">
             @auth
             <li class="c-hamburger__item">
               <a class="c-hamburger__txt" href="{{ route('logout') }}">ログアウト</a>
