@@ -2,8 +2,8 @@
   <div>
     <div v-if="items.length" class="p-detail__child">
       <div class="p-detail__child__contentWrap" v-for="item in items" :key="item.id">
-        <span class="p-detail__child__order u-weight--bold">ステップ{{item.order}}</span>
-        <span class="p-detail__child__title">{{item.name}}</span>
+        <p class="p-detail__child__order u-weight--bold">ステップ{{item.order}}</p>
+        <p class="p-detail__child__title">{{item.name}}</p>
       </div>
     </div>
     <div v-else>

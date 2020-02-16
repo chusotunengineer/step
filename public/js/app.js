@@ -24342,12 +24342,12 @@ var render = function() {
               { key: item.id, staticClass: "p-detail__child__contentWrap" },
               [
                 _c(
-                  "span",
+                  "p",
                   { staticClass: "p-detail__child__order u-weight--bold" },
                   [_vm._v("ステップ" + _vm._s(item.order))]
                 ),
                 _vm._v(" "),
-                _c("span", { staticClass: "p-detail__child__title" }, [
+                _c("p", { staticClass: "p-detail__child__title" }, [
                   _vm._v(_vm._s(item.name))
                 ])
               ]
