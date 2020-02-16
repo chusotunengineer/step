@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'パスワード再設定')
+@section('title', 'パスワード変更')
 
 @section('content')
 @if (session('pass_not_match'))
@@ -13,12 +13,12 @@
   <div class="c-bread__content">
     <a href="{{ route('top') }}" class="c-bread__txt">HOME</a>
     <span class="c-bread__arrow">&gt;</span>
-    <span class="c-bread__txt">パスワード再設定</span>
+    <span class="c-bread__txt">パスワード変更</span>
   </div>
 </div>
 <section class="l-sec">
   <h2 class="c-title">
-    パスワード再設定
+    パスワード変更
   </h2>
   <form method="POST" action="{{ route('passChange') }}">
     @csrf

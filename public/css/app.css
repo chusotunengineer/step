@@ -709,7 +709,6 @@ a:hover {
 
 .c-panel__content {
   width: 100%;
-  overflow: hidden;
 }
 
 .c-panel__title {
@@ -739,6 +738,7 @@ a:hover {
   font-weight: normal;
   line-height: 1.5;
   height: 120px;
+  overflow: hidden;
 }
 
 .c-panel__badge {
@@ -993,7 +993,7 @@ a:hover {
   margin-bottom: 40px;
 }
 
-.p-detail__child :last-child {
+.p-detail__child:last-of-type {
   margin-bottom: 0;
 }
 
@@ -1004,6 +1004,11 @@ a:hover {
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 4px;
+}
+
+.p-detail__child__contentWrap:hover {
+  text-decoration: none;
+  box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .p-detail__child__title {

@@ -2,6 +2,14 @@
 
 @section('title', 'トップ')
 
+@section('ogp')
+<meta property="og:url" content="http://step-webukatu.sakuraweb.com/" />
+<meta property="og:title" content="STEP" />
+<meta property="og:type" content="website">
+<meta property="og:description" content="あなたの人生のSTEPを共有しよう！挑戦を共有するサービス『STEP』" />
+<meta property="og:image" content="asset('img/logo@3x.png')" />
+@endsection
+
 @section('content')
 <div class="p-hero">
   <div class="p-hero__copyWrap">

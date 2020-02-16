@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'ログイン')
+@section('description', '挑戦を共有するサービス「STEP」のログインページです。')
 
 @section('content')
 <div class="c-bread">

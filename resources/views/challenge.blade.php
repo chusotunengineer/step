@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'ステップ詳細')
+@section('title', $step['name'])
+@section('description', '挑戦を共有するサービス「STEP」で、【'.$step['name'].'】に挑戦しましょう！')
 
 @section('content')
 <div class="c-bread">
