@@ -146,7 +146,7 @@ class StepsController extends Controller
     public function update(Request $request){
         $request->validate([
             'name' => 'required|string|max:30',
-            'content' => 'required|string',
+            'content' => 'required|string|max:500',
             'time' => 'integer|nullable|max:10000',
             'category_id' => 'required|integer',
             'image' => 'image|max:500',

@@ -24,5 +24,8 @@
   }
   &--wide {
     width: 300px;
+    @include mq() {
+      width: 100%;
+    }
   }
 }

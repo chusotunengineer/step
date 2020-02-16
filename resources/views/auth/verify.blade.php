@@ -9,11 +9,11 @@
 </div>
 @endif
 <div class="c-bread">
-  <div class="c-bread__content">
+  <p class="c-bread__content">
     <a href="{{ route('top') }}" class="c-bread__txt">HOME</a>
     <span class="c-bread__arrow">&gt;</span>
     <span class="c-bread__txt">会員登録</span>
-  </div>
+  </p>
 </div>
 <section class="l-sec">
   <h2 class="c-title">

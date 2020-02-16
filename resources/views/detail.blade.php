@@ -10,13 +10,13 @@
 
 @section('content')
 <div class="c-bread">
-  <div class="c-bread__content">
+  <p class="c-bread__content">
     <a href="{{ route('top') }}" class="c-bread__txt">HOME</a>
     <span class="c-bread__arrow">&gt;</span>
     <a href="{{ route('index') }}" class="c-bread__txt">ステップ一覧</a>
     <span class="c-bread__arrow">&gt;</span>
     <span class="c-bread__txt">ステップ詳細</span>
-  </div>
+  </p>
 </div>
 <section class="l-sec">
   <h2 class="c-title">

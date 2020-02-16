@@ -5,11 +5,11 @@
 @section('content')
 
 <div class="c-bread">
-  <div class="c-bread__content">
+  <p class="c-bread__content">
     <a href="{{ route('top') }}" class="c-bread__txt">HOME</a>
     <span class="c-bread__arrow">&gt;</span>
     <span class="c-bread__txt">パスワード再設定</span>
-  </div>
+  </p>
 </div>
 <section class="l-sec">
   <h2 class="c-title">
@@ -25,9 +25,9 @@
       <div class="c-form__inputWrap">
         <input id="email" type="email" class="c-form__input" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
         @error('email')
-        <span>
+        <p>
           <strong class="u-font--alert">{{ $message }}</strong>
-        </span>
+        </p>
         @enderror
       </div>
     </div>
@@ -37,9 +37,9 @@
       <div class="c-form__inputWrap">
         <input id="password" type="password" class="c-form__input" name="password" required autocomplete="new-password">
         @error('password')
-        <span>
+        <p>
           <strong class="u-font--alert">{{ $message }}</strong>
-        </span>
+        </p>
         @enderror
       </div>
     </div>

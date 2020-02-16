@@ -37342,6 +37342,62 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/fitie.js":
+/*!*******************************!*\
+  !*** ./resources/js/fitie.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+this.fitie = function (t) {
+  function e() {
+    c.call(t, g + m, e);
+    var a = {
+      boxSizing: "content-box",
+      display: "inline-block",
+      overflow: "hidden"
+    };
+    "backgroundColor backgroundImage borderColor borderStyle borderWidth bottom fontSize lineHeight height left opacity margin position right top visibility width".replace(/\w+/g, function (t) {
+      a[t] = l[t];
+    }), d.border = d.margin = d.padding = 0, d.display = "block", d.height = d.width = "auto", d.opacity = 1;
+    var h = t.videoWidth || t.width,
+        s = t.videoHeight || t.height,
+        u = h / s,
+        v = document.createElement("object-fit");
+    v.appendChild(t.parentNode.replaceChild(v, t));
+
+    for (var p in a) {
+      v.runtimeStyle[p] = a[p];
+    }
+
+    var b;
+    "fill" === i ? f ? (d.width = o, d.height = n) : (d["-ms-transform-origin"] = "0% 0%", d["-ms-transform"] = "scale(" + o / h + "," + n / s + ")") : (r > u ? "contain" === i : "cover" === i) ? (b = n * u, d.width = Math.round(b) + "px", d.height = n + "px", d.marginLeft = Math.round((o - b) / 2) + "px") : (b = o / u, d.width = o + "px", d.height = Math.round(b) + "px", d.marginTop = Math.round((n - b) / 2) + "px");
+  }
+
+  var i = t.currentStyle["object-fit"];
+
+  if (i && /^(contain|cover|fill)$/.test(i)) {
+    var o = t.clientWidth,
+        n = t.clientHeight,
+        r = o / n,
+        a = t.nodeName.toLowerCase(),
+        d = t.runtimeStyle,
+        l = t.currentStyle,
+        h = t.addEventListener || t.attachEvent,
+        c = t.removeEventListener || t.detachEvent,
+        g = t.addEventListener ? "" : "on",
+        f = "img" === a,
+        m = f ? "load" : "loadedmetadata";
+    h.call(t, g + m, e), t.complete && e();
+  }
+}, this.fitie.init = function () {
+  if (document.body) for (var t = document.querySelectorAll("img,video"), e = -1; t[++e];) {
+    fitie(t[e]);
+  } else setTimeout(fitie.init);
+}, /MSIE|Trident/.test(navigator.userAgent) && this.fitie.init();
+
+/***/ }),
+
 /***/ "./resources/js/script_jquery.js":
 /*!***************************************!*\
   !*** ./resources/js/script_jquery.js ***!
@@ -37398,14 +37454,15 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/js/script_jquery.js ./resources/sass/app.scss ***!
-  \*********************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/js/script_jquery.js ./resources/js/fitie.js ./resources/sass/app.scss ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Applications/MAMP/htdocs/step_dev/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /Applications/MAMP/htdocs/step_dev/resources/js/script_jquery.js */"./resources/js/script_jquery.js");
+__webpack_require__(/*! /Applications/MAMP/htdocs/step_dev/resources/js/fitie.js */"./resources/js/fitie.js");
 module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/step_dev/resources/sass/app.scss */"./resources/sass/app.scss");
 
 

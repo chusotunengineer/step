@@ -409,6 +409,12 @@ a:hover {
   width: 300px;
 }
 
+@media screen and (max-width: 790px) {
+  .c-button--wide {
+    width: 100%;
+  }
+}
+
 .c-card {
   position: relative;
 }

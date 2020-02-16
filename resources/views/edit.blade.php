@@ -4,11 +4,11 @@
 
 @section('content')
 <div class="c-bread">
-  <div class="c-bread__content">
+  <p class="c-bread__content">
     <a href="{{ route('top') }}" class="c-bread__txt">HOME</a>
     <span class="c-bread__arrow">&gt;</span>
     <span class="c-bread__txt">ステップ編集</span>
-  </div>
+  </p>
 </div>
 <section class="l-sec">
   <h2 class="c-title">
@@ -23,9 +23,9 @@
         <div class="c-form__inputWrap">
           <input id="name" type="text" class="c-form__input" name="name" value="{{ $step['name'] }}" required autofocus>
           @error('name')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </p>
           @enderror
         </div>
       </div>
@@ -38,9 +38,9 @@
             @endforeach
           </select>
           @error('category_id')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </p>
           @enderror
         </div>
       </div>
@@ -60,9 +60,9 @@
         <div class="c-form__inputWrap">
           <textarea id="content" type="text" class="c-form__textarea" name="content" required>{{ $step['content'] }}</textarea>
           @error('content')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span>
+          </p>
           @enderror
         </div>
       </div>
@@ -71,11 +71,11 @@
         <div class="c-form__inputWrap">
           <input id="image" type="file" class="c-form__input u-margin_bottom--m" name="image" accept="image/*">
           @error('image')
-          <span>
+          <p>
             <strong class="u-font--alert">{{ $message }}</strong>
-          </span><br>
+          </p>
           @enderror
-          <span>現在の画像 *変更しない場合はこのまま保存してください</span><br>
+          <p>現在の画像 *変更しない場合はこのまま保存してください</p>
           <img class="c-form__previewImg" src="{{ empty($step['image']) ? asset('img/no_image.png') : $step['image'] }}" alt="">
         </div>
       </div>
