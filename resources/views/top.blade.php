@@ -2,10 +2,6 @@
 
 @section('title', 'トップ')
 
-@section('ogp')
-
-@endsection
-
 @section('content')
 <div class="p-hero">
   <div class="p-hero__copyWrap">

@@ -3,6 +3,11 @@
 @section('title', $step['name'])
 @section('description', '挑戦を共有するサービス「STEP」で、【'.$step['name'].'】に挑戦しましょう！')
 
+@section('og_title', $step['name'].' - STEP')
+@section('og_type', 'article')
+@section('og_description', $step['content'])
+@section('og_img', $step['image'])
+
 @section('content')
 <div class="c-bread">
   <div class="c-bread__content">
