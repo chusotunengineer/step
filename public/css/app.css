@@ -1109,8 +1109,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-wrap: wrap;
+  width: 100vw;
 }
 
 .p-hero__copy {
@@ -1121,6 +1120,7 @@ a:hover {
   margin-bottom: 40px;
   white-space: nowrap;
   color: #000;
+  text-align: center;
 }
 
 @media screen and (max-width: 790px) {

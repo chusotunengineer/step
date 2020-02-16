@@ -13,8 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-wrap: wrap;
+    width: 100vw;
   }
   &__copy {
     display: block;
@@ -24,6 +23,7 @@
     margin-bottom: $margin-l;
     white-space: nowrap;
     color: $pure_black;
+    text-align: center;
     @include mq() {
       font-size: 10vw;
       margin-bottom: 3vw;
