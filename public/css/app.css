@@ -685,6 +685,13 @@ a:hover {
 .c-hamburger__item {
   padding: 16px 0 16px 14px;
   border-bottom: 1px solid #fff;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .c-hamburger__item {
+    display: block;
+  }
 }
 
 .c-hamburger__txt {
