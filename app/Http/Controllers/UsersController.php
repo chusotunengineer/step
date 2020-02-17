@@ -106,7 +106,7 @@ class UsersController extends Controller
 
     // パスワード変更ページのviewを返す
     public function passEdit(){
-      return view('auth.passwords.passEdit');
+        return view('auth.passwords.passEdit');
     }
 
     // postで送られてきたパスワード変更のリクエストをもとにレコードを更新する
@@ -132,8 +132,8 @@ class UsersController extends Controller
 
         // 入力された現在のパスワードが正しいかを判定
         if(!(Hash::check($current, $password))){
-          return redirect(route('passEdit'))->with('pass_not_match', '現在のパスワードが誤っています');
-          exit;
+            return redirect(route('passEdit'))->with('pass_not_match', '現在のパスワードが誤っています');
+            exit;
         }
 
         // レコードを更新
@@ -145,7 +145,7 @@ class UsersController extends Controller
 
     // ログアウトして、トップにリダイレクトする
     public function logout(){
-      Auth::logout();
-      return redirect(route('top'));
+        Auth::logout();
+        return redirect(route('top'));
     }
 }

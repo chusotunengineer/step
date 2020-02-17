@@ -46,14 +46,14 @@ class User extends Authenticatable implements MustVerifyEmailContract
         'email_verified_at' => 'datetime',
     ];
 
-  // パスワードリセット用のメールアドレスを通知クラスに紐付ける
-  public function sendPasswordResetNotification($token){
-    $this->notify(new CustomPasswordReset($token));
-  }
+    // パスワードリセット用のメールアドレスを通知クラスに紐付ける
+    public function sendPasswordResetNotification($token){
+        $this->notify(new CustomPasswordReset($token));
+    }
 
-  // Emai認証用のメールアドレスを通知クラスに紐付ける
-  public function sendEmailVerificationNotification()
-  {
-    $this->notify(new CustomVerifyEmail());
-  }
+    // Emai認証用のメールアドレスを通知クラスに紐付ける
+    public function sendEmailVerificationNotification()
+    {
+        $this->notify(new CustomVerifyEmail());
+    }
 }
