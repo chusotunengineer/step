@@ -856,7 +856,7 @@ a:hover {
   transition: transform 0.6s;
 }
 
-.c-share__button:hover::before {
+.c-share__button:hover > .c-share__img {
   transform: translate(500px, -50%);
   transition: transform 0.4s;
 }
@@ -866,17 +866,12 @@ a:hover {
   transition: color 0.4s;
 }
 
-.c-share__button::before {
-  content: "";
-  background-image: url(/images/logo__twitter@4x.png?be864634f4d03278aaba9bf61927d5ee);
-  background-size: contain;
-  display: inline-block;
+.c-share__img {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translate(0, -50%);
   width: 30px;
-  height: 25px;
   transition: transform 0.6s;
 }
 

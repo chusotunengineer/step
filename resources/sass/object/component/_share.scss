@@ -33,7 +33,7 @@
       transform: translateX(500px);
       transition: transform 0.6s;
     }
-    &:hover::before {
+    &:hover > .c-share__img {
       transform: translate(500px, -50%);
       transition: transform 0.4s;
     }
@@ -41,19 +41,14 @@
       color: $twitter_color;
       transition: color 0.4s;
     }
-    &::before {
-      content: "";
-      background-image: url("../img/logo__twitter@4x.png");
-      background-size: contain;
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translate(0, -50%);
-      width: 30px;
-      height: 25px;
-      transition: transform 0.6s;
-    }
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    width: 30px;
+    transition: transform 0.6s;
   }
   &__txt {
     display: inline-block;
