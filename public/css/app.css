@@ -822,9 +822,10 @@ a:hover {
   border-radius: 5px;
   background: transparent;
   text-align: center;
-  padding: 20px 80px;
   border: 2px solid #1da1f2;
   overflow: hidden;
+  width: 500px;
+  height: 70px;
 }
 
 @media screen and (max-width: 790px) {
@@ -879,6 +880,7 @@ a:hover {
   display: inline-block;
   color: #fff;
   transition: color 0.4s;
+  line-height: 70px;
 }
 
 .p-challenge {
