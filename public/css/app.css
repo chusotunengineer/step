@@ -874,7 +874,7 @@ a:hover {
   width: 30px;
   transition: transform 0.6s;
   -o-object-fit: none;
-     object-fit: none;
+  object-fit: cover;
 }
 
 .c-share__txt {
