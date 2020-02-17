@@ -9,11 +9,11 @@
     width: 25%;
     height: auto;
     border: 2px solid $main;
-    padding: 30px 10px;
+    padding: $space-l $space-s;
     border-radius: 4px;
     @include mq() {
       width: 100%;
-      margin-bottom: $margin-l;
+      margin-bottom: $space-l;
     }
   }
   &__notFound {
@@ -38,7 +38,7 @@
     }
     label {
       width: 100%;
-      margin-bottom: $margin-s;
+      margin-bottom: $space-s;
     }
   }
   .c-button {

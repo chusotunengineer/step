@@ -1,9 +1,9 @@
 .p-hero {
   position: relative;
   padding-top: 50%;
-  margin-bottom: $margin-xl;
+  margin-bottom: $space-xl;
   @include mq(xl) {
-    margin: $margin-3l 0 $margin-xl 0;
+    margin: $space-3l 0 $space-xl 0;
   }
   @include mq() {
     padding-top: 100%;
@@ -20,7 +20,7 @@
     font-family: $raleway;
     font-size: 90px;
     font-weight: bold;
-    margin-bottom: $margin-l;
+    margin-bottom: $space-l;
     white-space: nowrap;
     color: $pure_black;
     text-align: center;
@@ -55,7 +55,7 @@
     bottom: 10%;
     right: 5%;
     @include mq() {
-      padding: 5px 10px;
+      padding: $space-ss $space-s;
       font-size: $font-ss;
     }
   }

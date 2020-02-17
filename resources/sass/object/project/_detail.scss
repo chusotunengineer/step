@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: $margin-l;
+    margin-bottom: $space-l;
     @include mq() {
       flex-direction: column;
     }
@@ -12,7 +12,7 @@
     width: 48%;
     @include mq() {
       width: 100%;
-      margin-bottom: $margin-l;
+      margin-bottom: $space-l;
     }
   }
   &__img {
@@ -23,7 +23,7 @@
     }
   }
   &__child {
-    margin-bottom: $margin-l;
+    margin-bottom: $space-l;
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -31,8 +31,8 @@
       display: block;
       width: 100%;
       border: 2px solid $main;
-      padding: 10px 20px;
-      margin-bottom: $margin-m;
+      padding: $space-s $space-m;
+      margin-bottom: $space-m;
       border-radius: 4px;
     }
     &__title {
@@ -46,8 +46,8 @@
     justify-content: space-between;
     align-items: center;
     border: 2px solid $main;
-    padding: 20px;
-    margin-bottom: $margin-l;
+    padding: $space-m;
+    margin-bottom: $space-l;
     border-radius: 4px;
     @include mq(sm) {
       flex-direction: column;
@@ -60,7 +60,7 @@
     }
     @include mq(sm) {
       width: 100%;
-      margin-bottom: $margin-m;
+      margin-bottom: $space-m;
     }
     &__imgWrap {
       position: relative;
@@ -79,13 +79,13 @@
     width: 80%;
     @include mq(sm) {
       width: 100%;
-      margin-bottom: $margin-m;
+      margin-bottom: $space-m;
     }
     &__txt {
       width: 100%;
       min-height: 150px;
-      background: $light-gray;
-      padding: 10px;
+      background: $light_gray;
+      padding: $space-s;
       @include mq(sm) {
         min-height: 300px;
       }

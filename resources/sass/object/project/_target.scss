@@ -6,7 +6,7 @@
     width: 31%;
     @include mq() {
       width: 80%;
-      margin: 0 auto $margin-l auto;
+      margin: 0 auto $space-l auto;
     }
   }
   &__imgWrap {
@@ -14,7 +14,7 @@
     width: 100%;
     padding-top: 100%;
     border-radius: 50%;
-    margin-bottom: $margin-m;
+    margin-bottom: $space-m;
     overflow: hidden;
     background: $beige;
   }
@@ -31,5 +31,8 @@
     display: block;
     font-size: $font-l;
     text-align: center;
+    @include mq(sm) {
+      font-size: $font-m;
+    }
   }
 }

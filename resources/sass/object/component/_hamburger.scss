@@ -5,7 +5,7 @@
   z-index: 4;
   cursor: pointer;
   &.active {
-    padding-left: 10px;
+    padding-left: $space-s;
     .c-hamburger__line {
       background: $white;
       transition: all 0.8s;
@@ -45,7 +45,7 @@
     width: 450px;
     background: rgba(233, 141, 20, 0.9);
     margin: 0;
-    padding: 130px 25px 0 25px;
+    padding: $space-3l $space-m 0 $space-m;
     transform: translateX(450px);
     opacity: 0;
     transition: all 0.8s;
@@ -60,7 +60,7 @@
     }
   }
   &__item {
-    padding: 16px 0 16px 14px;
+    padding: $space-m $space-s;
     border-bottom: 1px solid $white;
   }
   &__txt {

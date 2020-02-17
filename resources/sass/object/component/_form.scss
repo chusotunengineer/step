@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid $gray;
-    padding: 30px 0;
+    padding: $space-l 0;
     &::after {
       content: "";
       position: absolute;
@@ -29,7 +29,7 @@
     width: 25%;
     @include mq() {
       width: 100%;
-      margin-bottom: $margin-m;
+      margin-bottom: $space-m;
     }
   }
   &__inputWrap {
@@ -44,7 +44,7 @@
     background: $gray;
     width: 100%;
     border-radius: 5px;
-    padding: 10px;
+    padding: $space-s;
   }
   &__select {
     height: 50px;
@@ -54,13 +54,13 @@
   }
   &__linkWrap {
     text-align: right;
-    margin-bottom: $margin-s;
+    margin-bottom: $space-s;
   }
   &__checkWrap {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: $margin-l;
+    margin-bottom: $space-l;
   }
   &__previewImg {
     width: 50%;

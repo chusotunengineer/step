@@ -1,22 +1,22 @@
 .c-bread {
   width: 100%;
-  margin-bottom: $margin-l;
+  margin-bottom: $space-l;
   background: $navy;
-  padding: 5px 0;
+  padding: $space-ss 0;
   @include mq(xl) {
-    margin: $margin-3l auto $margin-l auto;
+    margin: $space-3l auto $space-l auto;
   }
   &__content {
     width: 1100px;
     margin: auto;
     @include mq(xl) {
       width: 100%;
-      padding: 5px 20px;
+      padding: $space-ss $space-m;
     }
   }
   &__arrow {
     color: $white;
-    margin: 0 $margin-s;
+    margin: 0 $space-s;
   }
   &__txt {
     color: $white;

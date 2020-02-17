@@ -7,8 +7,8 @@
   border: 2px solid $main;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: $margin-m;
-  padding: 20px;
+  margin-bottom: $space-m;
+  padding: $space-m;
   width: calc(50% - 10px);
   @include mq() {
     width: 100%;
@@ -27,13 +27,13 @@
     text-align: center;
     font-size: $font-m;
     font-weight: bold;
-    margin-bottom: $margin-s;
+    margin-bottom: $space-s;
   }
   &__imgWrap {
     position: relative;
     width: 100%;
     padding-top: 56%;
-    margin-bottom: $margin-m;
+    margin-bottom: $space-m;
   }
   &__img {
     position: absolute;

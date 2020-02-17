@@ -6,7 +6,7 @@
   }
   &__footer {
     @include mq() {
-      margin-bottom: $margin-l;
+      margin-bottom: $space-l;
     }
   }
 }

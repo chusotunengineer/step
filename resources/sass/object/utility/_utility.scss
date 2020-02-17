@@ -13,44 +13,44 @@
 // margin-topを各サイズ指定
 .u-margin_top {
   &--ss {
-    margin-top: $margin-ss;
+    margin-top: $space-ss;
   }
   &--s {
-    margin-top: $margin-s;
+    margin-top: $space-s;
   }
   &--m {
-    margin-top: $margin-m;
+    margin-top: $space-m;
   }
   &--l {
-    margin-top: $margin-l;
+    margin-top: $space-l;
   }
   &--xl {
-    margin-top: $margin-xl;
+    margin-top: $space-xl;
   }
   &--3l {
-    margin-top: $margin-3l;
+    margin-top: $space-3l;
   }
 }
 
 // margin-bottomを各サイズ指定
 .u-margin_bottom {
   &--ss {
-    margin-bottom: $margin-ss;
+    margin-bottom: $space-ss;
   }
   &--s {
-    margin-bottom: $margin-s;
+    margin-bottom: $space-s;
   }
   &--m {
-    margin-bottom: $margin-m;
+    margin-bottom: $space-m;
   }
   &--l {
-    margin-bottom: $margin-l;
+    margin-bottom: $space-l;
   }
   &--xl {
-    margin-bottom: $margin-xl;
+    margin-bottom: $space-xl;
   }
   &--3l {
-    margin-bottom: $margin-3l;
+    margin-bottom: $space-3l;
   }
 }
 

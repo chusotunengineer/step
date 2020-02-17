@@ -7,13 +7,13 @@
     width: 70%;
     @include mq(lg) {
       width: 100%;
-      margin-bottom: $margin-l;
+      margin-bottom: $space-l;
     }
   }
   &__txt {
-    background: $light-gray;
+    background: $light_gray;
     min-height: 300px;
-    padding: 20px;
+    padding: $space-m;
   }
   &__sidebar {
     width: 25%;
@@ -22,11 +22,11 @@
     }
   }
   &__currentStep {
-    background-color: $light-gray;
+    background-color: $light_gray;
   }
   .c-button {
     @include mq() {
-      margin: $margin-l auto;
+      margin: $space-l auto;
     }
   }
 }

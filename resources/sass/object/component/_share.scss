@@ -7,12 +7,12 @@
     border-radius: 5px;
     background: transparent;
     text-align: center;
-    padding: 20px 80px;
+    padding: $space-m $space-xl;
     border: 2px solid $twitter_color;
     overflow: hidden;
     @include mq() {
       width: 100%;
-      padding: 20px 0;
+      padding: $space-m 0;
     }
     &::after {
       content: "";

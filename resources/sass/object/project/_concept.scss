@@ -7,7 +7,7 @@
   }
   &__txt {
     @include mq() {
-      margin-bottom: $margin-l;
+      margin-bottom: $space-l;
     }
   }
   &__img {

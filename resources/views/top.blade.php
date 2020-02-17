@@ -19,7 +19,7 @@
 </div>
 <section class="l-sec">
   <h2 class="c-title">
-    挑戦したいことはあるけれど・・・
+    挑戦したいことは<br class="u-none__pc--sm">あるけれど・・・
   </h2>
   <div class="p-target">
     <div class="p-target__item">
@@ -44,8 +44,8 @@
 </section>
 <section class="l-sec">
   <h2 class="c-title">
-    あなたの人生のSTEPを共有しよう<br>
-    挑戦を共有するサービス『STEP』
+    あなたの人生の<br class="u-none__pc--sm">STEPを共有しよう<br>
+    挑戦を共有するサービス<br class="u-none__pc--sm">『STEP』
   </h2>
   <div class="p-concept">
     <p class="p-concept__txt">
@@ -65,7 +65,7 @@
 </section>
 <section class="l-sec">
   <h2 class="c-title">
-    誰かのステップに挑戦する
+    誰かのステップに<br class="u-none__pc--sm">挑戦する
   </h2>
   <div class="p-manual">
     <div class="c-card">
