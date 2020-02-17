@@ -873,6 +873,8 @@ a:hover {
   transform: translate(0, -50%);
   width: 30px;
   transition: transform 0.6s;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .c-share__txt {
