@@ -91,6 +91,9 @@
               <a class="c-hamburger__txt" href="{{ route('choice') }}">ステップ編集</a>
             </li>
             <li class="c-hamburger__item">
+              <a class="c-hamburger__txt" href="{{ route('choiceDelete') }}">ステップ削除</a>
+            </li>
+            <li class="c-hamburger__item">
               <a class="c-hamburger__txt" href="{{ route('profEdit') }}">プロフィール登録・編集</a>
             </li>
             @endauth
