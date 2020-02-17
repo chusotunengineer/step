@@ -7,6 +7,7 @@ use App\Step;
 use App\ChildStep;
 use App\User;
 use App\Category;
+use App\Challenge;
 use Illuminate\Support\Facades\Auth;
 
 class StepsController extends Controller
@@ -201,7 +202,9 @@ class StepsController extends Controller
       // 親ステップを削除
       Step::destroy($id);
       // 子ステップを削除
-      childStep::where('parent_id', $id)->delete();
+      ChildStep::where('parent_id', $id)->delete();
+      // チャレンジ状況を削除
+      Challenge::where('step_id', $id)->delete();
 
       // マイページへリダイレクト
       return redirect(route('mypage'));
