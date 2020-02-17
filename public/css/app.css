@@ -271,7 +271,7 @@ a:hover {
 }
 
 @media screen and (max-width: 790px) {
-  .l-footer li {
+  .l-footer .p-nav__item {
     line-height: 2;
   }
 }
