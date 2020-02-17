@@ -1202,6 +1202,12 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 790px) {
+  .p-index__notFound {
+    width: 100%;
+  }
+}
+
 .p-index__content {
   display: flex;
   flex-wrap: wrap;
@@ -1282,6 +1288,12 @@ a:hover {
 
 .p-mypage__content {
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 520px) {
+  .p-mypage__content .c-title {
+    font-size: 20px;
+  }
 }
 
 .p-nav__list {

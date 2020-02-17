@@ -19,6 +19,9 @@
   &__notFound {
     width: 70%;
     text-align: center;
+    @include mq() {
+      width: 100%;
+    }
   }
   &__content {
     display: flex;

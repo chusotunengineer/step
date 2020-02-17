@@ -4,5 +4,10 @@
   flex-wrap: wrap;
   &__content {
     margin-bottom: $space-l;
+    @include mq(sm) {
+      .c-title {
+        font-size: $font-m;
+      }
+    }
   }
 }
