@@ -1302,6 +1302,10 @@ a:hover {
   align-items: center;
 }
 
+.p-nav__item--white {
+  color: #fff;
+}
+
 .p-sidebar {
   position: -webkit-sticky;
   position: sticky;
