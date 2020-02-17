@@ -54,7 +54,6 @@
     </a>
     <div class="c-share">
       <a href="http://twitter.com/share?text=挑戦を共有するサービス【STEP】で、『{{ $step['name'] }}』に挑戦しよう！&url=http://step-webukatu.sakuraweb.com/steps%3fid%3D{{ $step['id'] }}&hashtags=step,挑戦" rel="nofollow" target="_blank" class="c-share__button">
-        <img src="{{ asset('img/logo__twitter@4x.png') }}" alt="twitter" class="c-share__img">
         <p class="c-share__txt u-none__mobile--sm">
           このステップをTwitterでシェアしよう！
         </p>
