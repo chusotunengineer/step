@@ -23871,13 +23871,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm.items.steps == 0
-      ? _c("div", [
-          _c("p", { staticClass: "p-mypage__txt" }, [
-            _vm._v("挑戦中のステップはありません。")
-          ])
-        ])
-      : _c(
+    _vm.items.length
+      ? _c(
           "div",
           { staticClass: "u-display--flex" },
           _vm._l(_vm.items.steps, function(step, i) {
@@ -23923,6 +23918,11 @@ var render = function() {
           }),
           0
         )
+      : _c("div", [
+          _c("p", { staticClass: "p-mypage__txt" }, [
+            _vm._v("挑戦中のステップはありません。")
+          ])
+        ])
   ])
 }
 var staticRenderFns = []

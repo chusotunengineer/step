@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div v-if="items.steps == 0">
-      <p class="p-mypage__txt">挑戦中のステップはありません。</p>
-    </div>
-    <div v-else class="u-display--flex">
+    <div v-if="items.length" class="u-display--flex">
       <a
         class="c-panel"
         v-for="(step, i) in items.steps"
@@ -21,6 +18,9 @@
           class="c-panel__badge"
         >{{ Math.round(items.challenges[i].progress / step.child_num * 100) + '%' }}</span>
       </a>
+    </div>
+    <div v-else>
+      <p class="p-mypage__txt">挑戦中のステップはありません。</p>
     </div>
   </div>
 </template>
