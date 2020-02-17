@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="items.length" class="u-display--flex">
+    <div v-if="items.steps.length" class="u-display--flex">
       <a
         class="c-panel"
         v-for="(step, i) in items.steps"
